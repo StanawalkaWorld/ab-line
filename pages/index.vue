@@ -11,4 +11,3 @@ export default defineComponent({
 <template>
     <div>Hello! {{ msg }} <i class="bi bi-house-fill text-rose-600"></i></div>
 </template>
-
