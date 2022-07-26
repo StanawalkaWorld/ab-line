@@ -10,11 +10,14 @@ export default defineComponent({
 
 <template>
     <section
-        class="py-5 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-600 flex items-center"
+        class="py-5 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-600 flex"
         :style="{
             backgroundImage: `url('${require('@/assets/img/ciezarowka.webp')}')`,
         }"
     >
+        <!-- ⬆ Main section tag with a dimmed image -->
+
+        <!--  -->
         <div
             class="flex <lg:flex-col justify-center items-center container mx-auto"
         >
