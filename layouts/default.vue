@@ -2,6 +2,7 @@
 import { defineComponent } from "vue";
 import TheFooter from "~/components/structure/TheFooter.vue";
 import TopHeader from "~/components/structure/TopHeader.vue";
+import "@/assets/main.css";
 
 export default defineComponent({
     name: "default-layout",
