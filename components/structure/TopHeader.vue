@@ -8,7 +8,7 @@ interface Navlink {
 }
 
 export default defineComponent({
-    name: "top-header",
+    name: "TopHeader",
     setup() {
         const navlinks: Navlink[] = [
             {
@@ -55,6 +55,6 @@ export default defineComponent({
 
 <style scoped>
 nav .nuxt-link-exact-active {
-    @apply text-primary-400 font-semibold bg-primary-100 border border-primary-400;
+    @apply text-primary-400 font-bold bg-primary-100 border-2 border-primary-400;
 }
 </style>

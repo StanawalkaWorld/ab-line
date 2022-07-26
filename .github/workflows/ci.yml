@@ -39,8 +39,11 @@ jobs:
             - name: Install dependencies 👨🏻‍💻
               run: npm ci --prefer-offline --no-audit
 
+            - name: Fix src using Eslint and Prettier 👨‍🏭
+              run: npm run lintfix
+
             - name: Run linter 👀
               run: npm run lint
 
-            - name: Test build 👨‍🏭
+            - name: Test build 🖥
               run: npm run build
