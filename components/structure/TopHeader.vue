@@ -32,7 +32,7 @@ export default defineComponent({
 
 <template>
     <header class="container mx-auto flex flex-col md:flex-row">
-        <NuxtLink to="/">
+        <NuxtLink to="/" class="flex justify-center <md:mb-5">
             <img
                 src="@/assets/img/logo/full-white.svg"
                 alt="A&B Line logo"
