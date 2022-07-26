@@ -1,8 +1,24 @@
+<script lang="ts">
+import { defineComponent } from "vue";
+import TheFooter from "~/components/structure/TheFooter.vue";
+import TopHeader from "~/components/structure/TopHeader.vue";
+import "@/assets/main.css";
+
+export default defineComponent({
+    name: "default-layout",
+    components: {
+        TopHeader,
+        TheFooter,
+    },
+});
+</script>
+
 <template>
     <div>
-        <h1 class="text-sky-900 text-xl font-bold mb-5">
-            uga buga big brain time
-        </h1>
-        <Nuxt />
+        <TopHeader class="my-5" />
+        <main class="min-h-screen mb-5">
+            <Nuxt />
+        </main>
+        <TheFooter />
     </div>
 </template>
