@@ -10,7 +10,7 @@ export default defineComponent({
     <header class="container mx-auto">
         <NavLink to="/">
             <img
-                src="@/assets/img/logo/full.svg"
+                src="@/assets/img/logo/full-white.svg"
                 alt="A&B Line logo"
                 class="p-1 h-20"
             />
