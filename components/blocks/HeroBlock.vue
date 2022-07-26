@@ -16,9 +16,9 @@ export default defineComponent({
         }"
     >
         <div
-            class="flex flex-col lg:flex-row justify-center items-center container mx-auto"
+            class="flex <lg:flex-col justify-center items-center container mx-auto"
         >
-            <div class="w-1/2">
+            <div class="sm:w-1/2 <lg:(text-center mb-5)">
                 <h1 class="text-6xl font-semibold mb-8">Nagłówek</h1>
                 <p>Tekst motywujący do skorzystania z usług.</p>
                 <NuxtLink to="/pricing">
@@ -29,7 +29,9 @@ export default defineComponent({
                     >
                 </NuxtLink>
             </div>
-            <div class="w-1/2 flex justify-center items-center">
+            <div
+                class="sm:w-1/2 flex justify-center items-center <lg:text-center"
+            >
                 <div class="min-w-1/2 bg-primary-900 px-6 py-10">
                     <h2 class="text-4xl mb-5">Skontaktuj się z nami:</h2>
                     <address>
@@ -50,17 +52,3 @@ export default defineComponent({
         </div>
     </section>
 </template>
-<!-- 
-
-<p>
-                            <i class="bi bi-envelope mr-2 text-lg"></i>
-                            <a href="mailto:abline.office@gmail.com"
-                                >abline.office@gmail.com</a
-                            >
-                        </p>
-                        <p>
-                            <i class="bi bi-telephone mr-2 text-lg"></i>
-                            <a href="tel:+48883766963">+48 883 766 963</a>
-                        </p>
-
- -->
