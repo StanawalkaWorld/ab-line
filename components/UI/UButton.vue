@@ -2,6 +2,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
+    name: "UButton",
     props: {
         icon: {
             required: false,
