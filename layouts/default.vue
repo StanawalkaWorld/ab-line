@@ -15,8 +15,8 @@ export default defineComponent({
 
 <template>
     <div>
-        <TopHeader />
-        <main>
+        <TopHeader class="my-5" />
+        <main class="min-h-screen mb-5">
             <Nuxt />
         </main>
         <TheFooter />
