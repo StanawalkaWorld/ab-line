@@ -1,9 +1,9 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: "ab-line",
+        title: "A&B Line Andrzej Barański",
         htmlAttrs: {
-            lang: "en",
+            lang: "pl",
         },
         meta: [
             { charset: "utf-8" },
@@ -11,7 +11,17 @@ export default {
                 name: "viewport",
                 content: "width=device-width, initial-scale=1",
             },
-            { hid: "description", name: "description", content: "" },
+            {
+                hid: "description",
+                name: "description",
+                content: "Transport krajowy A&B Line Andrzej Barański.",
+            },
+            { name: "author", content: "Dawid Barański" },
+            {
+                name: "keywords",
+                content:
+                    "transport, polska, krajowy, tir, ciężarówka, ciezarowka, abline, a&b, a8b, przewóz, pomorskie",
+            },
             { name: "format-detection", content: "telephone=no" },
         ],
         link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
