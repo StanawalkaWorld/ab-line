@@ -35,7 +35,6 @@ export default defineComponent({
                 <div class="min-w-1/2 bg-primary-900 px-6 py-10">
                     <h2 class="text-4xl mb-5">Skontaktuj się z nami:</h2>
                     <address>
-                        <p class="mb-1">Andrzej Barański</p>
                         <p>
                             <i class="bi bi-envelope mr-2 text-lg"></i>
                             <a href="mailto:abline.office@gmail.com"
