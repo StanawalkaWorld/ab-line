@@ -22,7 +22,7 @@ export default defineComponent({
             class="flex <lg:flex-col justify-center items-center container mx-auto"
         >
             <!-- Half-width container for a header and motivational paragraph -->
-            <div class="sm:w-1/2 <lg:(text-center mb-5)">
+            <div class="sm:w-1/2 <lg:(text-center mb-6)">
                 <h1 class="text-6xl font-semibold mb-8">Nagłówek</h1>
                 <p>Tekst motywujący do skorzystania z usług.</p>
                 <!-- Button link into pricing page -->
@@ -39,21 +39,25 @@ export default defineComponent({
                 class="sm:w-1/2 flex justify-center items-center <lg:text-center"
             >
                 <!-- Resizable block div, that packs all text -->
-                <div class="min-w-1/2 bg-primary-900 px-6 py-10">
+                <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10">
                     <h2 class="text-4xl mb-5">Skontaktuj się z nami:</h2>
                     <!-- Address tag making text italic -->
                     <address>
                         <p>
                             <!-- E-mail -->
                             <i class="bi bi-envelope mr-2 text-lg"></i>
-                            <a href="mailto:abline.office@gmail.com"
+                            <a
+                                href="mailto:abline.office@gmail.com"
+                                class="text-primary-200"
                                 >abline.office@gmail.com</a
                             >
                         </p>
                         <p>
                             <!-- Phone number -->
                             <i class="bi bi-telephone mr-2 text-lg"></i>
-                            <a href="tel:+48883766963">+48 883 766 963</a>
+                            <a href="tel:+48883766963" class="text-primary-200"
+                                >+48 883 766 963</a
+                            >
                         </p>
                     </address>
                 </div>
