@@ -8,11 +8,6 @@ export default defineComponent({
             type: String,
             default: "",
         },
-        filled: {
-            required: false,
-            type: Boolean,
-            default: true,
-        },
     },
     emits: ["click"],
 });
