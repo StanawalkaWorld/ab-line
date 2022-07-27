@@ -1,7 +1,41 @@
 body {
-    @apply bg-primary-900 text-primary-50;
+    @apply bg-primary-900 text-primary-50 overflow-x-hidden;
 }
 
 .bgimage {
     @apply bg-no-repeat bg-center bg-cover;
+}
+
+/* Animations */
+
+@keyframes fadeslidefromleft {
+    from {
+        transform: translateX(-10vw);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-slide-from-left-anim {
+    animation: fadeslidefromleft 0.5s;
+}
+
+@keyframes fadeslidefromright {
+    from {
+        transform: translateX(10vw);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-slide-from-right-anim {
+    animation: fadeslidefromright 0.5s;
 }

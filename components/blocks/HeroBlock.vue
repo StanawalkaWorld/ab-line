@@ -22,7 +22,10 @@ export default defineComponent({
             class="flex <lg:flex-col justify-center items-center container mx-auto"
         >
             <!-- Half-width container for a header and motivational paragraph -->
-            <div class="sm:w-1/2 <lg:(text-center mb-6)">
+            <div
+                ref="leftBlock"
+                class="sm:w-1/2 <lg:(text-center mb-6) fade-slide-from-left-anim"
+            >
                 <h1 class="text-6xl font-semibold mb-8">Nagłówek</h1>
                 <p>Tekst motywujący do skorzystania z usług.</p>
                 <!-- Button link into pricing page -->
@@ -36,7 +39,7 @@ export default defineComponent({
             </div>
             <!-- Half-width block for contact information -->
             <div
-                class="sm:w-1/2 flex justify-center items-center <lg:text-center"
+                class="sm:w-1/2 flex justify-center items-center <lg:text-center fade-slide-from-right-anim"
             >
                 <!-- Resizable block div, that packs all text -->
                 <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10">
