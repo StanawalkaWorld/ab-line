@@ -34,7 +34,7 @@ export default defineComponent({
                     >
                 </NuxtLink>
             </div>
-            <!-- Half-width block centering contact information -->
+            <!-- Half-width block for contact information -->
             <div
                 class="sm:w-1/2 flex justify-center items-center <lg:text-center"
             >
