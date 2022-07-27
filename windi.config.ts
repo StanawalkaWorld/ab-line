@@ -3,6 +3,15 @@ import { defineConfig } from "@windicss/plugin-utils";
 export default defineConfig({
     theme: {
         extend: {
+            animation: {
+                "appear-in": 'in-from-left 2s linear',
+                keyframes: {
+                    "in-from-left": {
+                        '0%': { transform: 'translateX(-50vw)' },
+                        '100%': { transform: 'translateX(0)' }
+                    }
+                }
+            },
             colors: {
                 primary: {
                     50: "#f2f3fd",
