@@ -31,7 +31,9 @@ export default defineComponent({
 </script>
 
 <template>
-    <header class="container mx-auto flex flex-col md:flex-row">
+    <header
+        class="container mx-auto flex flex-col md:flex-row fade-slide-from-top-anim"
+    >
         <NuxtLink to="/" class="flex justify-center <md:mb-5">
             <img
                 src="@/assets/img/logo/full-white.svg"
