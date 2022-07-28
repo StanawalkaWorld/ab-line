@@ -1,23 +1,5 @@
-
-.page-enter-active,
-.page-leave-active {
-    transition-property: transform, opacity;
-    transition-duration: 0.2s;
-}
-
-.page-enter-active {
-    transition-delay: 0.2s;
-}
-
-.page-enter-from {
-    opacity: 0;
-    transform: translateY(-5vw);
-}
-
-.page-leave-to {
-    opacity: 0;
-    transform: translateY(5vw);
-}
+.page-enter-active, .page-leave-active { transition: opacity .3s; }
+.page-enter, .page-leave-active { opacity: 0; }
 
 @media (prefers-reduced-motion:reduce) {
     .page-enter-active,
