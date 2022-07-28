@@ -1,8 +1,24 @@
 <template>
     <footer class="bg-black text-white flex <lg:(flex-col items-center) p-10">
-        <div class="lg:w-1/2 flex justify-center items-center">
+        <div class="footer-block">
             <div class="p-5">
-                <h3 class="text-xl text-center">
+                <h3 class="footer-header">Nawigacja</h3>
+                <ul>
+                    <li>
+                        <NuxtLink to="/">Strona główna</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/pricing">Wycena</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/contact">Kontakt</NuxtLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-block">
+            <div class="p-5">
+                <h3 class="footer-header">
                     <i class="bi bi-building"></i> Dane firmy:
                 </h3>
                 <ul>
@@ -12,9 +28,9 @@
                 </ul>
             </div>
         </div>
-        <div class="lg:w-1/2 flex justify-center items-center">
+        <div class="footer-block">
             <div class="p-5">
-                <h3 class="text-xl text-center">
+                <h3 class="footer-header">
                     <i class="bi bi-person"></i> Kontakt:
                 </h3>
                 <ul>
@@ -37,3 +53,16 @@
         </div>
     </footer>
 </template>
+
+<style scoped>
+.footer-block {
+    @apply lg:flex-grow flex justify-center items-center;
+}
+.footer-header {
+    @apply text-xl text-center font-semibold mb-2;
+}
+
+.nuxt-link-exact-active {
+    @apply text-rose-500 font-bold;
+}
+</style>
