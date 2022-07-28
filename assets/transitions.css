@@ -11,12 +11,12 @@
 
 .page-enter-from {
     opacity: 0;
-    transform: translateY(-10vh);
+    transform: translateY(-5vw);
 }
 
 .page-leave-to {
     opacity: 0;
-    transform: translateY(10vh);
+    transform: translateY(5vw);
 }
 
 @media (prefers-reduced-motion:reduce) {
