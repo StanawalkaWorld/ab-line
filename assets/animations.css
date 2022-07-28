@@ -12,10 +12,6 @@
     }
 }
 
-.fade-slide-from-left-anim {
-    animation: fadeslidefromleft 0.5s;
-}
-
 /* Slide in from RIGHT */
 
 @keyframes fadeslidefromright {
@@ -28,10 +24,6 @@
         transform: translateX(0);
         opacity: 1;
     }
-}
-
-.fade-slide-from-right-anim {
-    animation: fadeslidefromright 0.5s;
 }
 
 /* Slide in from TOP */
@@ -50,4 +42,10 @@
 
 .fade-slide-from-top-anim {
     animation: fadeslidefromtop 0.5s;
+}
+.fade-slide-from-right-anim {
+    animation: fadeslidefromright 0.5s;
+}
+.fade-slide-from-left-anim {
+    animation: fadeslidefromleft 0.5s;
 }
