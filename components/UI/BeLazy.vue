@@ -13,22 +13,31 @@ export default defineComponent({
 
     setup() {
         const wasShown = ref<boolean>(false);
-        const reveal = (): void => {
-            wasShown.value = true;
-        };
         const targetElement = ref();
 
-        onMounted(() => {
-            const observer = new IntersectionObserver(reveal, {
-                threshold: 0.5,
+        const callback = (
+            entries: IntersectionObserverEntry[],
+            observer: IntersectionObserver
+        ): void => {
+            entries.forEach(({ isIntersecting }) => {
+                if (isIntersecting) {
+                    console.log("👨‍🏭");
+                    wasShown.value = true;
+                    observer.disconnect();
+                }
             });
+        };
 
+        onMounted(() => {
+            const observer = new IntersectionObserver(callback, {
+                threshold: 1,
+                root: document.querySelector("#app"),
+            });
             observer.observe(targetElement.value);
         });
 
         return {
             wasShown,
-            reveal,
             targetElement,
         };
     },
@@ -36,9 +45,10 @@ export default defineComponent({
 </script>
 
 <template>
-    <Transition :name="transitionName">
-        <div v-show="wasShown" ref="targetElement">
-            <slot />
-        </div>
-    </Transition>
+    <div>
+        <div ref="targetElement"></div>
+        <Transition :name="transitionName">
+            <slot v-if="wasShown" />
+        </Transition>
+    </div>
 </template>
