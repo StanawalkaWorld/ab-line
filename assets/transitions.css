@@ -1,7 +1,13 @@
-.page-enter-active, .page-leave-active { transition: opacity .3s; }
-.page-enter, .page-leave-active { opacity: 0; }
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-active {
+    opacity: 0;
+}
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-reduced-motion: reduce) {
     .page-enter-active,
     .page-leave-active {
         transition-duration: 0;

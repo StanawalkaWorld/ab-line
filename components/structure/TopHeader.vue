@@ -36,7 +36,7 @@ export default defineComponent({
     >
         <NuxtLink to="/" class="flex justify-center <md:mb-5">
             <img
-                src="@/assets/img/logo/full-white.svg"
+                src="@/assets/img/logo/full-new.webp"
                 alt="A&B Line logo"
                 class="h-20"
             />
