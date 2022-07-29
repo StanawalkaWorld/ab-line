@@ -7,6 +7,9 @@ export default defineComponent({
         return { msg: "Hello!" };
     },
     components: { HeroBlock },
+    head: {
+        title: "Strona główna - A&B Line",
+    },
 });
 </script>
 
