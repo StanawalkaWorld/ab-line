@@ -1,6 +1,14 @@
 <template>
     <footer class="bg-black text-white flex <lg:(flex-col items-center) p-10">
         <div class="footer-block">
+            <div
+                class="w-1/2 h-20 bg-contain bg-no-repeat bg-center"
+                :style="{
+                    backgroundImage: `url('${require('@/assets/img/logo/short-new.webp')}')`,
+                }"
+            ></div>
+        </div>
+        <div class="footer-block">
             <div class="p-5">
                 <h3 class="footer-header">Nawigacja</h3>
                 <ul>
