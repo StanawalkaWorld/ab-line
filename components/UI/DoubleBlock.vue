@@ -8,7 +8,7 @@ export default defineComponent({
     setup() {
         const trigger = ref();
         const { isVisible } = useIntersectionObserver(trigger, {
-            threshold: 0.6,
+            threshold: 0.4,
         });
 
         return {
