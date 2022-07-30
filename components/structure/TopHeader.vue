@@ -12,6 +12,11 @@ export default defineComponent({
     setup() {
         const navlinks: Navlink[] = [
             {
+                name: "Strona główna",
+                to: "/",
+                icon: "bi-house-fill",
+            },
+            {
                 name: "Wycena",
                 to: "/pricing",
                 icon: "bi-tag-fill",
