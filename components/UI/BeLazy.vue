@@ -4,7 +4,7 @@ import { defineComponent, onMounted, ref } from "vue";
 export default defineComponent({
     name: "BeLazy",
     props: {
-        transitionName: {
+        animationClass: {
             required: false,
             default: "page",
             type: String,
@@ -21,7 +21,6 @@ export default defineComponent({
         ): void => {
             entries.forEach(({ isIntersecting }) => {
                 if (isIntersecting) {
-                    console.log("👨‍🏭");
                     wasShown.value = true;
                     observer.disconnect();
                 }
@@ -30,7 +29,7 @@ export default defineComponent({
 
         onMounted(() => {
             const observer = new IntersectionObserver(callback, {
-                threshold: 1,
+                threshold: 0.5,
                 root: document.querySelector("#app"),
             });
             observer.observe(targetElement.value);
@@ -45,10 +44,10 @@ export default defineComponent({
 </script>
 
 <template>
-    <div>
-        <div ref="targetElement"></div>
-        <Transition :name="transitionName">
-            <slot v-if="wasShown" />
-        </Transition>
+    <div
+        ref="targetElement"
+        :class="{ invisible: !wasShown, [animationClass]: wasShown }"
+    >
+        <slot />
     </div>
 </template>
