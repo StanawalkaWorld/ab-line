@@ -9,9 +9,14 @@ export default defineComponent({
             default: "page",
             type: String,
         },
+        treshold: {
+            required: false,
+            default: 0.5,
+            type: Number,
+        },
     },
 
-    setup() {
+    setup(props) {
         const wasShown = ref<boolean>(false);
         const targetElement = ref();
 
@@ -29,7 +34,7 @@ export default defineComponent({
 
         onMounted(() => {
             const observer = new IntersectionObserver(callback, {
-                threshold: 0.5,
+                threshold: props.treshold,
                 root: document.querySelector("#app"),
             });
             observer.observe(targetElement.value);
