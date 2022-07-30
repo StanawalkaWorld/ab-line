@@ -6,7 +6,6 @@ export const useSmoothScroll = () => {
     const scrollTo = (el: MaybeRef<string>) => {
         if(process.client) {
             monadRun(document.querySelector(unref(el)), (element) => {
-                console.log(element);
                 element.scrollIntoView({
                     behavior: "smooth",
                     block: "center"
