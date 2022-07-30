@@ -43,6 +43,7 @@ export default defineComponent({
                 <h3
                     class="text-6xl text-center font-bold text-transparent bg-clip-text p-3 bg-gradient-to-r from-rose-500 to-primary-500"
                 >
+                    <!-- Gradient Header -->
                     Lorem ipsum dolor sit amet consectetur adipisicing.
                 </h3>
             </template>
@@ -53,10 +54,13 @@ export default defineComponent({
                         backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
                         transform: 'scaleX(-1)',
                     }"
-                ></div>
+                >
+                    <!-- Left Image -->
+                </div>
             </template>
 
             <p class="text-2xl text-justify pb-20">
+                <!-- Main text -->
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                 minus quis eaque accusantium maiores, fuga consequuntur unde
                 esse soluta perferendis, quidem quia. Quisquam consequuntur
@@ -77,7 +81,9 @@ export default defineComponent({
                     :style="{
                         backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
                     }"
-                ></div>
+                >
+                    <!-- Right Image -->
+                </div>
             </template>
         </TripleBlock>
     </div>
