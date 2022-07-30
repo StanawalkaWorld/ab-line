@@ -38,7 +38,7 @@ export default defineComponent({
             >
         </div>
         <!-- First Content block -->
-        <TripleBlock class="my-40" id="first-block">
+        <TripleBlock class="my-40 xl:items-start" id="first-block">
             <template #header>
                 <h3
                     class="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text p-3 mb-5 bg-gradient-to-r from-rose-500 to-primary-500"
@@ -59,7 +59,7 @@ export default defineComponent({
                 </div>
             </template>
 
-            <p class="text-lg xl:text-xl <xl:p-5 sm:text-justify pb-20">
+            <p class="text-lg xl:text-xl <xl:p-5 sm:text-justify">
                 <!-- Main text -->
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                 minus quis eaque accusantium maiores, fuga consequuntur unde
