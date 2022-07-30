@@ -8,7 +8,7 @@ export default defineComponent({
     setup() {
         const trigger = ref();
         const { isVisible } = useIntersectionObserver(trigger, {
-            threshold: 0.6,
+            threshold: 0.4,
         });
 
         return {
@@ -22,7 +22,7 @@ export default defineComponent({
 <template>
     <div
         ref="trigger"
-        class="flex <lg:flex-col items-center justify-center flex-wrap"
+        class="flex <xl:flex-col items-center justify-center flex-wrap"
         :class="{ invisible: !isVisible }"
     >
         <div
@@ -32,19 +32,19 @@ export default defineComponent({
             <slot name="header" />
         </div>
         <div
-            class="w-full lg:w-1/3"
+            class="w-full xl:w-1/3"
             :class="{ 'fade-slide-from-left-anim': isVisible }"
         >
             <slot name="left" />
         </div>
         <div
-            class="w-full lg:w-1/3"
+            class="w-full xl:w-1/3"
             :class="{ 'fade-slide-from-bottom-anim': isVisible }"
         >
             <slot />
         </div>
         <div
-            class="w-full lg:w-1/3"
+            class="w-full xl:w-1/3"
             :class="{ 'fade-slide-from-right-anim': isVisible }"
         >
             <slot name="right" />

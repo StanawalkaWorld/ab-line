@@ -10,9 +10,9 @@ export default defineComponent({
 
 <template>
     <section
-        class="py-5 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-600 flex"
+        class="py-6 px-2 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-600 flex"
         :style="{
-            backgroundImage: `url('${require('@/assets/img/ciezarowka.webp')}')`,
+            backgroundImage: `url('${require('@/assets/img/pexels-mike-b-trucking.webp')}')`,
         }"
     >
         <!-- ⬆ Main section tag with a dimmed image -->
@@ -26,11 +26,13 @@ export default defineComponent({
                 ref="leftBlock"
                 class="sm:w-1/2 <lg:(text-center mb-6) fade-slide-from-left-anim"
             >
-                <h1 class="text-6xl font-semibold mb-8">
+                <h1 class="text-4xl lg:text-6xl font-semibold mb-8">
                     Profesjonalna spedycja
                     <nobr
                         >w Europie
-                        <span class="fi fi-eu rounded-md text-5xl"></span
+                        <span
+                            class="fi fi-eu rounded-md text-3xl lg:text-5xl"
+                        ></span
                     ></nobr>
                 </h1>
                 <p class="text-lg">

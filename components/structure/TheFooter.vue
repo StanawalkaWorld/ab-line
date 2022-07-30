@@ -9,8 +9,8 @@
             ></div>
         </div>
         <div class="footer-block">
-            <div class="p-5">
-                <h3 class="footer-header">Nawigacja</h3>
+            <div class="p-5 <lg:text-center">
+                <h3 class="footer-header">Nawigacja:</h3>
                 <ul>
                     <li>
                         <NuxtLink to="/">Strona główna</NuxtLink>

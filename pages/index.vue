@@ -41,7 +41,7 @@ export default defineComponent({
         <TripleBlock class="my-40" id="first-block">
             <template #header>
                 <h3
-                    class="text-6xl text-center font-bold text-transparent bg-clip-text p-3 bg-gradient-to-r from-rose-500 to-primary-500"
+                    class="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text p-3 mb-5 bg-gradient-to-r from-rose-500 to-primary-500"
                 >
                     <!-- Gradient Header -->
                     Lorem ipsum dolor sit amet consectetur adipisicing.
@@ -49,7 +49,7 @@ export default defineComponent({
             </template>
             <template #left>
                 <div
-                    class="h-prose bg-contain bg-center m-10 bg-no-repeat filter brightness-75"
+                    class="h-prose bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
                     :style="{
                         backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
                         transform: 'scaleX(-1)',
@@ -59,7 +59,7 @@ export default defineComponent({
                 </div>
             </template>
 
-            <p class="text-2xl text-justify pb-20">
+            <p class="text-lg xl:text-xl <xl:p-5 sm:text-justify pb-20">
                 <!-- Main text -->
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                 minus quis eaque accusantium maiores, fuga consequuntur unde
@@ -77,7 +77,7 @@ export default defineComponent({
 
             <template #right>
                 <div
-                    class="h-prose bg-contain bg-center m-10 bg-no-repeat filter brightness-75"
+                    class="h-prose bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
                     :style="{
                         backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
                     }"
