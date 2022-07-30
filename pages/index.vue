@@ -1,13 +1,23 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import { useSmoothScroll } from "@/composables/scroll";
 import HeroBlock from "~/components/blocks/HeroBlock.vue";
 import TripleBlock from "../components/UI/TripleBlock.vue";
+import UButton from "~/components/UI/UButton.vue";
 
 export default defineComponent({
     setup() {
-        return { msg: "Hello!" };
+        const { scrollTo } = useSmoothScroll();
+
+        const toFirstBlock = () => {
+            scrollTo("#first-block");
+        };
+
+        return {
+            toFirstBlock,
+        };
     },
-    components: { HeroBlock, TripleBlock },
+    components: { HeroBlock, TripleBlock, UButton },
     head: {
         title: "Strona główna - A&B Line",
     },
@@ -18,8 +28,17 @@ export default defineComponent({
     <div>
         <!-- Hero block -->
         <HeroBlock />
-        <!-- First -->
-        <TripleBlock class="mt-20">
+        <!-- Downwards link -->
+        <div class="flex items-center justify-center py-10">
+            <UButton
+                icon="bi-arrow-down"
+                class="text-primary-200 mx-auto font-semibold"
+                @click="toFirstBlock"
+                >Zobacz naszą ofertę</UButton
+            >
+        </div>
+        <!-- First Paragraph block -->
+        <TripleBlock class="mt-20" id="first-block">
             <template #header>
                 <h3
                     class="text-6xl text-center font-bold text-transparent bg-clip-text p-3 bg-gradient-to-r from-rose-500 to-primary-500"
