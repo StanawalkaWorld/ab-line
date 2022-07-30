@@ -4,6 +4,7 @@ import { useSmoothScroll } from "@/composables/scroll";
 import HeroBlock from "~/components/blocks/HeroBlock.vue";
 import TripleBlock from "../components/UI/TripleBlock.vue";
 import UButton from "~/components/UI/UButton.vue";
+import ImagePowered from "../components/UI/ImagePowered.vue";
 
 export default defineComponent({
     setup() {
@@ -17,7 +18,7 @@ export default defineComponent({
             toFirstBlock,
         };
     },
-    components: { HeroBlock, TripleBlock, UButton },
+    components: { HeroBlock, TripleBlock, UButton, ImagePowered },
     head: {
         title: "Strona główna - A&B Line",
     },
@@ -41,7 +42,7 @@ export default defineComponent({
         <TripleBlock class="my-40 xl:items-start" id="first-block">
             <template #header>
                 <h3
-                    class="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text p-3 mb-5 bg-gradient-to-r from-rose-500 to-primary-500"
+                    class="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
                 >
                     <!-- Gradient Header -->
                     Lorem ipsum dolor sit amet consectetur adipisicing.
@@ -86,5 +87,23 @@ export default defineComponent({
                 </div>
             </template>
         </TripleBlock>
+        <ImagePowered
+            :img-src="require('@/assets/img/pexels-marcin-jozwiak-trucks.webp')"
+            class="my-40"
+        >
+            <template #header>
+                Lorem ipsum dolor sit amet consectetur.
+            </template>
+            <template #content>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Placeat laudantium libero vel alias. Blanditiis deserunt porro
+                dolore eum magnam commodi veritatis quidem laboriosam placeat
+                necessitatibus distinctio quos et dolorem nesciunt, facilis
+                officia delectus? Inventore quam aliquam quae voluptatibus,
+                assumenda natus debitis quasi soluta. Quis architecto non
+                reprehenderit expedita nostrum, quidem provident nesciunt rerum
+                perspiciatis facilis inventore fugiat voluptatem mollitia porro!
+            </template>
+        </ImagePowered>
     </div>
 </template>
