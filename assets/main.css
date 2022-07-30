@@ -1,5 +1,8 @@
+@import "./animations.css";
+@import "./transitions.css";
+
 body {
-    @apply bg-primary-900 text-primary-50;
+    @apply bg-primary-900 text-primary-50 overflow-x-hidden;
 }
 
 .bgimage {

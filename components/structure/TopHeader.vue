@@ -12,6 +12,11 @@ export default defineComponent({
     setup() {
         const navlinks: Navlink[] = [
             {
+                name: "Strona główna",
+                to: "/",
+                icon: "bi-house-fill",
+            },
+            {
                 name: "Wycena",
                 to: "/pricing",
                 icon: "bi-tag-fill",
@@ -31,10 +36,12 @@ export default defineComponent({
 </script>
 
 <template>
-    <header class="container mx-auto flex flex-col md:flex-row">
+    <header
+        class="container mx-auto flex flex-col md:flex-row fade-slide-from-top-anim"
+    >
         <NuxtLink to="/" class="flex justify-center <md:mb-5">
             <img
-                src="@/assets/img/logo/full-white.svg"
+                src="@/assets/img/logo/full-new.webp"
                 alt="A&B Line logo"
                 class="h-20"
             />

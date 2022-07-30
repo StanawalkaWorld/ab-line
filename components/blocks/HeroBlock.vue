@@ -10,9 +10,9 @@ export default defineComponent({
 
 <template>
     <section
-        class="py-5 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-600 flex"
+        class="py-6 px-2 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-600 flex"
         :style="{
-            backgroundImage: `url('${require('@/assets/img/ciezarowka.webp')}')`,
+            backgroundImage: `url('${require('@/assets/img/pexels-mike-b-trucking.webp')}')`,
         }"
     >
         <!-- ⬆ Main section tag with a dimmed image -->
@@ -22,9 +22,22 @@ export default defineComponent({
             class="flex <lg:flex-col justify-center items-center container mx-auto"
         >
             <!-- Half-width container for a header and motivational paragraph -->
-            <div class="sm:w-1/2 <lg:(text-center mb-6)">
-                <h1 class="text-6xl font-semibold mb-8">Nagłówek</h1>
-                <p>Tekst motywujący do skorzystania z usług.</p>
+            <div
+                ref="leftBlock"
+                class="sm:w-1/2 <lg:(text-center mb-6) fade-slide-from-left-anim"
+            >
+                <h1 class="text-4xl lg:text-6xl font-semibold mb-8">
+                    Profesjonalna spedycja
+                    <nobr
+                        >w Europie
+                        <span
+                            class="fi fi-eu rounded-md text-3xl lg:text-5xl"
+                        ></span
+                    ></nobr>
+                </h1>
+                <p class="text-lg">
+                    Zapewniamy pewną dostawę towaru z punktu A do punktu B.
+                </p>
                 <!-- Button link into pricing page -->
                 <NuxtLink to="/pricing">
                     <UButton
@@ -34,12 +47,12 @@ export default defineComponent({
                     >
                 </NuxtLink>
             </div>
-            <!-- Half-width block centering contact information -->
+            <!-- Half-width block for contact information -->
             <div
-                class="sm:w-1/2 flex justify-center items-center <lg:text-center"
+                class="sm:w-1/2 flex justify-center items-center <lg:text-center fade-slide-from-right-anim"
             >
                 <!-- Resizable block div, that packs all text -->
-                <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10">
+                <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10 rounded-lg">
                     <h2 class="text-4xl mb-5">Skontaktuj się z nami:</h2>
                     <!-- Address tag making text italic -->
                     <address>
