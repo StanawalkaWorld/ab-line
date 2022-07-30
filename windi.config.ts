@@ -1,7 +1,7 @@
 import { defineConfig } from "@windicss/plugin-utils";
 
 export default defineConfig({
-    safelist: ['invisible'],
+    safelist: ["invisible"],
     theme: {
         extend: {
             colors: {
