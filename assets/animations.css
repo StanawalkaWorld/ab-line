@@ -35,7 +35,21 @@
     }
 
     to {
-        transform: translateX(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Slide in from BOTTOM */
+
+@keyframes fadeslidefrombottom {
+    from {
+        transform: translateY(5vw);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -48,4 +62,7 @@
 }
 .fade-slide-from-left-anim {
     animation: fadeslidefromleft 0.5s;
+}
+.fade-slide-from-bottom-anim {
+    animation: fadeslidefrombottom 0.5s;
 }
