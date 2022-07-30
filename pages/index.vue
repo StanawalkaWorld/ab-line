@@ -19,7 +19,7 @@ export default defineComponent({
         <!-- Hero block -->
         <HeroBlock />
         <!-- First -->
-        <TripleBlock>
+        <TripleBlock class="mt-20">
             <template #header>
                 <h3
                     class="text-6xl text-center font-bold text-transparent bg-clip-text p-3 bg-gradient-to-r from-rose-500 to-primary-500"
@@ -37,18 +37,19 @@ export default defineComponent({
                 ></div>
             </template>
 
-            <p class="text-2xl text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-                molestiae ut quia exercitationem voluptatibus ipsa nisi repellat
-                iure aut reiciendis consequuntur quae, quis quidem aperiam rem
-                officiis nemo atque. Architecto iusto cum autem assumenda est
-                quos esse dolores molestiae inventore natus doloremque odio
-                provident, quaerat quod temporibus possimus doloribus quae eum
-                impedit aliquid debitis nulla. Possimus ipsum culpa laudantium
-                neque odit placeat eum nisi asperiores! Ratione molestias labore
-                cum rem reprehenderit! Porro corporis quae amet fugit, ipsum
-                suscipit molestiae nostrum officia magni voluptatem illo
-                obcaecati voluptatibus autem maxime ipsa tempora.
+            <p class="text-2xl text-justify pb-20">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+                minus quis eaque accusantium maiores, fuga consequuntur unde
+                esse soluta perferendis, quidem quia. Quisquam consequuntur
+                reprehenderit eligendi, explicabo velit at debitis earum alias
+                consequatur itaque omnis quod autem voluptate. Nobis, magni,
+                commodi quis neque praesentium ex esse corrupti asperiores
+                molestiae, officia earum nostrum. Qui saepe molestiae voluptatum
+                sunt ab aliquid deserunt numquam possimus. Mollitia alias animi
+                quibusdam doloribus nostrum, soluta molestias nesciunt, ex
+                quidem consequuntur magni dicta saepe, eius inventore fugiat
+                dolore voluptas? Molestiae aperiam deleniti reprehenderit quod
+                consequatur voluptates ea!
             </p>
 
             <template #right>
