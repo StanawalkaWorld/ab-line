@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-black text-white flex <lg:(flex-col items-center) p-10">
-        <div class="footer-block">
+        <div class="footer-block <lg:w-full">
             <div
                 class="w-1/2 h-20 bg-contain bg-no-repeat bg-center"
                 :style="{
