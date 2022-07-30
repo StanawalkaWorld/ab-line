@@ -42,7 +42,7 @@ export default defineComponent({
                 class="sm:w-1/2 flex justify-center items-center <lg:text-center fade-slide-from-right-anim"
             >
                 <!-- Resizable block div, that packs all text -->
-                <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10">
+                <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10 rounded-lg">
                     <h2 class="text-4xl mb-5">Skontaktuj się z nami:</h2>
                     <!-- Address tag making text italic -->
                     <address>
