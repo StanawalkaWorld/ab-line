@@ -26,8 +26,16 @@ export default defineComponent({
                 ref="leftBlock"
                 class="sm:w-1/2 <lg:(text-center mb-6) fade-slide-from-left-anim"
             >
-                <h1 class="text-6xl font-semibold mb-8">Nagłówek</h1>
-                <p>Tekst motywujący do skorzystania z usług.</p>
+                <h1 class="text-6xl font-semibold mb-8">
+                    Profesjonalna spedycja
+                    <nobr
+                        >w Europie
+                        <span class="fi fi-eu rounded-md text-5xl"></span
+                    ></nobr>
+                </h1>
+                <p class="text-lg">
+                    Zapewniamy pewną dostawę towaru z punktu A do punktu B.
+                </p>
                 <!-- Button link into pricing page -->
                 <NuxtLink to="/pricing">
                     <UButton
