@@ -22,7 +22,7 @@ export default defineComponent({
 <template>
     <div
         ref="trigger"
-        class="flex <lg:flex-col items-center justify-center h-screen-sm flex-wrap"
+        class="flex <lg:flex-col items-center justify-center flex-wrap"
         :class="{ invisible: !isVisible }"
     >
         <div
