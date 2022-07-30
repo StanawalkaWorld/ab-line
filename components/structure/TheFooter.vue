@@ -41,22 +41,24 @@
                 <h3 class="footer-header">
                     <i class="bi bi-person"></i> Kontakt:
                 </h3>
-                <ul>
-                    <li>
-                        <i class="bi bi-envelope-fill mr-2"></i>
-                        <a
-                            href="mailto:abline.office@gmail.com"
-                            class="text-primary-200"
-                            >abline.office@gmail.com</a
-                        >
-                    </li>
-                    <li>
-                        <i class="bi bi-telephone-fill mr-2"></i>
-                        <a href="tel:+48883766963" class="text-primary-200"
-                            >+48 883 766 963</a
-                        >
-                    </li>
-                </ul>
+                <address>
+                    <ul>
+                        <li>
+                            <i class="bi bi-envelope-fill mr-2"></i>
+                            <a
+                                href="mailto:abline.office@gmail.com"
+                                class="text-primary-200"
+                                >abline.office@gmail.com</a
+                            >
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill mr-2"></i>
+                            <a href="tel:+48883766963" class="text-primary-200"
+                                >+48 883 766 963</a
+                            >
+                        </li>
+                    </ul>
+                </address>
             </div>
         </div>
     </footer>
