@@ -37,8 +37,8 @@ export default defineComponent({
                 >Zobacz naszą ofertę</UButton
             >
         </div>
-        <!-- First Paragraph block -->
-        <TripleBlock class="mt-20" id="first-block">
+        <!-- First Content block -->
+        <TripleBlock class="my-40" id="first-block">
             <template #header>
                 <h3
                     class="text-6xl text-center font-bold text-transparent bg-clip-text p-3 bg-gradient-to-r from-rose-500 to-primary-500"
