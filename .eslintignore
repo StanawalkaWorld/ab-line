@@ -93,3 +93,4 @@ sw.*
 
 pages/*.vue
 layouts/*.vue
+items/
