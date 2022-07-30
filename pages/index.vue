@@ -1,14 +1,13 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import HeroBlock from "~/components/blocks/HeroBlock.vue";
-import BeLazy from "~/components/UI/BeLazy.vue";
-import DoubleBlock from "~/components/blocks/DoubleBlock.vue";
+import TripleBlock from "../components/UI/TripleBlock.vue";
 
 export default defineComponent({
     setup() {
         return { msg: "Hello!" };
     },
-    components: { HeroBlock, BeLazy, DoubleBlock },
+    components: { HeroBlock, TripleBlock },
     head: {
         title: "Strona główna - A&B Line",
     },
@@ -17,31 +16,49 @@ export default defineComponent({
 
 <template>
     <div>
+        <!-- Hero block -->
         <HeroBlock />
-
-        <div class="h-screen"></div>
-
-        <DoubleBlock>
-            <h3 class="text-6xl text-center">Lorem ipsum dolor sit amet.</h3>
-            <template #left>
-                <h3 class="text-3xl text-justify p-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                    numquam delectus, sunt ex dignissimos officia expedita
-                    voluptate magni velit quos quam unde consequuntur pariatur
-                    aliquid voluptas nihil vero deleniti minima voluptates
-                    consequatur. Ratione vitae saepe atque voluptate amet rem
-                    commodi mollitia iusto hic maxime, blanditiis ea veritatis.
-                    Repudiandae, ipsam cumque.
+        <!-- First -->
+        <TripleBlock>
+            <template #header>
+                <h3
+                    class="text-6xl text-center font-bold text-transparent bg-clip-text p-3 bg-gradient-to-r from-rose-500 to-primary-500"
+                >
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
                 </h3>
             </template>
-            <template #right>
+            <template #left>
                 <div
+                    class="h-prose bg-contain bg-center m-10 bg-no-repeat filter brightness-75"
                     :style="{
-                        backgroundImage: `url('${require('@/assets/img/pexels-mike-b-trucking.webp')}')`,
+                        backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
+                        transform: 'scaleX(-1)',
                     }"
-                    class="h-96 w-full bgimage bg-blend-multiply bg-true-gray-400 m-6"
                 ></div>
             </template>
-        </DoubleBlock>
+
+            <p class="text-2xl text-justify">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
+                molestiae ut quia exercitationem voluptatibus ipsa nisi repellat
+                iure aut reiciendis consequuntur quae, quis quidem aperiam rem
+                officiis nemo atque. Architecto iusto cum autem assumenda est
+                quos esse dolores molestiae inventore natus doloremque odio
+                provident, quaerat quod temporibus possimus doloribus quae eum
+                impedit aliquid debitis nulla. Possimus ipsum culpa laudantium
+                neque odit placeat eum nisi asperiores! Ratione molestias labore
+                cum rem reprehenderit! Porro corporis quae amet fugit, ipsum
+                suscipit molestiae nostrum officia magni voluptatem illo
+                obcaecati voluptatibus autem maxime ipsa tempora.
+            </p>
+
+            <template #right>
+                <div
+                    class="h-prose bg-contain bg-center m-10 bg-no-repeat filter brightness-75"
+                    :style="{
+                        backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
+                    }"
+                ></div>
+            </template>
+        </TripleBlock>
     </div>
 </template>
