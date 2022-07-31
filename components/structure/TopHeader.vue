@@ -52,7 +52,7 @@ export default defineComponent({
                 v-for="link in navlinks"
                 :key="link.name"
                 :to="link.to"
-                class="py-1 px-3 hover:(text-primary-200 border-b-2 border-primary-200) transition-all duration-75"
+                class="<md:w-full py-5 text-center md:(p-10 px-5 hover:(text-primary-200 border-b-2 border-primary-200)) transition-all duration-75"
             >
                 <i :class="['bi', link.icon ?? '', 'text-sm', 'mr-1']"></i>
                 {{ link.name }}
@@ -63,6 +63,6 @@ export default defineComponent({
 
 <style scoped>
 nav .nuxt-link-exact-active {
-    @apply font-semibold bg-primary-300 text-primary-50 rounded-md border-none;
+    @apply font-semibold bg-dominant-800 text-primary-50 rounded-md border-2 border-dominant-500;
 }
 </style>
