@@ -31,6 +31,9 @@ export default defineComponent({
                     <nobr
                         >w Europie
                         <span
+                            class="fi fi-pl rounded-md text-3xl lg:text-5xl"
+                        ></span>
+                        <span
                             class="fi fi-eu rounded-md text-3xl lg:text-5xl"
                         ></span
                     ></nobr>
@@ -56,6 +59,11 @@ export default defineComponent({
                     <h2 class="text-4xl mb-5">Skontaktuj się z nami:</h2>
                     <!-- Address tag making text italic -->
                     <address>
+                        <p>
+                            <!-- Name and lastname -->
+                            <i class="bi bi-person mr-2 text-lg"></i>
+                            <span class="text-lg">Andrzej Barański</span>
+                        </p>
                         <p>
                             <!-- E-mail -->
                             <i class="bi bi-envelope mr-2 text-lg"></i>
