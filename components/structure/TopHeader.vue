@@ -40,11 +40,12 @@ export default defineComponent({
         class="container mx-auto flex flex-col md:flex-row fade-slide-from-top-anim"
     >
         <NuxtLink to="/" class="flex justify-center <md:mb-5">
-            <img
-                src="@/assets/img/logo/full-new.webp"
-                alt="A&B Line logo"
-                class="h-20"
-            />
+            <div
+                class="bg-contain bg-center h-20 w-full md:w-20 bg-no-repeat"
+                :style="{
+                    backgroundImage: `url('${require('@/assets/img/logo/full-new.webp')}')`,
+                }"
+            ></div>
         </NuxtLink>
         <nav class="flex flex-col md:flex-row items-center ml-10 children:mr-6">
             <NuxtLink
