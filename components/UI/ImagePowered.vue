@@ -22,7 +22,7 @@ export default defineComponent({
 
 <template>
     <div>
-        <DoubleBlock class="container mx-auto py-20" :class="optClasses">
+        <DoubleBlock class="container mx-auto" :class="optClasses">
             <template #left>
                 <div class="px-5 xl:pr-10">
                     <h3
