@@ -22,9 +22,9 @@ export default defineComponent({
                 icon: "bi-tag-fill",
             },
             {
-                name: "Kontakt",
-                to: "/contact",
-                icon: "bi-telephone-fill",
+                name: "O nas",
+                to: "/about",
+                icon: "bi-person-fill",
             },
         ];
 
