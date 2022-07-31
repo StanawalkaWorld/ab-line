@@ -30,9 +30,11 @@
                     <i class="bi bi-building"></i> Dane firmy:
                 </h3>
                 <ul>
-                    <li>Pełna nazwa: A&B Line Andrzej Barański</li>
-                    <li>NIP: 5811803184</li>
-                    <li>REGON: 220330804</li>
+                    <li>
+                        <span class="font-semibold">Pełna nazwa</span>: A&B Line
+                    </li>
+                    <li><span class="font-semibold">NIP</span>: 5811803184</li>
+                    <li><span class="font-semibold">REGON</span>: 220330804</li>
                 </ul>
             </div>
         </div>
