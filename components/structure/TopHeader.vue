@@ -22,9 +22,9 @@ export default defineComponent({
                 icon: "bi-tag-fill",
             },
             {
-                name: "Kontakt",
-                to: "/contact",
-                icon: "bi-telephone-fill",
+                name: "O nas",
+                to: "/about",
+                icon: "bi-person-fill",
             },
         ];
 
@@ -40,18 +40,19 @@ export default defineComponent({
         class="container mx-auto flex flex-col md:flex-row fade-slide-from-top-anim"
     >
         <NuxtLink to="/" class="flex justify-center <md:mb-5">
-            <img
-                src="@/assets/img/logo/full-new.webp"
-                alt="A&B Line logo"
-                class="h-20"
-            />
+            <div
+                class="bg-contain bg-center h-20 w-full md:w-20 bg-no-repeat"
+                :style="{
+                    backgroundImage: `url('${require('@/assets/img/logo/full-new.webp')}')`,
+                }"
+            ></div>
         </NuxtLink>
         <nav class="flex flex-col md:flex-row items-center ml-10 children:mr-6">
             <NuxtLink
                 v-for="link in navlinks"
                 :key="link.name"
                 :to="link.to"
-                class="py-1 px-3 hover:(text-primary-200 border-b-2 border-primary-200) transition-all duration-75"
+                class="<md:w-full py-5 text-center md:(p-10 px-5 hover:(text-primary-100 bg-dominant-700 border-b-2 border-primary-200)) transition-all duration-75"
             >
                 <i :class="['bi', link.icon ?? '', 'text-sm', 'mr-1']"></i>
                 {{ link.name }}
@@ -62,6 +63,6 @@ export default defineComponent({
 
 <style scoped>
 nav .nuxt-link-exact-active {
-    @apply font-semibold bg-primary-300 text-primary-50 rounded-md border-none;
+    @apply font-semibold bg-dominant-800 text-primary-50 rounded-md border-2 border-dominant-500;
 }
 </style>

@@ -31,6 +31,9 @@ export default defineComponent({
                     <nobr
                         >w Europie
                         <span
+                            class="fi fi-pl rounded-md text-3xl lg:text-5xl"
+                        ></span>
+                        <span
                             class="fi fi-eu rounded-md text-3xl lg:text-5xl"
                         ></span
                     ></nobr>
@@ -57,18 +60,27 @@ export default defineComponent({
                     <!-- Address tag making text italic -->
                     <address>
                         <p>
+                            <!-- Name and lastname -->
+                            <i class="bi bi-person mr-2 text-xl"></i>
+                            <span class="text-lg font-semibold"
+                                >Andrzej Barański</span
+                            >
+                        </p>
+                        <p>
                             <!-- E-mail -->
                             <i class="bi bi-envelope mr-2 text-lg"></i>
                             <a
                                 href="mailto:abline.office@gmail.com"
-                                class="text-primary-200"
+                                class="text-primary-200 text-lg"
                                 >abline.office@gmail.com</a
                             >
                         </p>
                         <p>
                             <!-- Phone number -->
                             <i class="bi bi-telephone mr-2 text-lg"></i>
-                            <a href="tel:+48883766963" class="text-primary-200"
+                            <a
+                                href="tel:+48883766963"
+                                class="text-primary-200 text-lg"
                                 >+48 883 766 963</a
                             >
                         </p>

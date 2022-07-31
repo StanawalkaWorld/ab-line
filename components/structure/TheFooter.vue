@@ -11,7 +11,7 @@
         <div class="footer-block">
             <div class="p-5 <lg:text-center">
                 <h3 class="footer-header">Nawigacja:</h3>
-                <ul>
+                <ul class="text-lg">
                     <li>
                         <NuxtLink to="/">Strona główna</NuxtLink>
                     </li>
@@ -30,9 +30,11 @@
                     <i class="bi bi-building"></i> Dane firmy:
                 </h3>
                 <ul>
-                    <li>Pełna nazwa: A&B Line Andrzej Barański</li>
-                    <li>NIP: 5811803184</li>
-                    <li>REGON: 220330804</li>
+                    <li>
+                        <span class="font-semibold">Pełna nazwa</span>: A&B Line
+                    </li>
+                    <li><span class="font-semibold">NIP</span>: 5811803184</li>
+                    <li><span class="font-semibold">REGON</span>: 220330804</li>
                 </ul>
             </div>
         </div>
@@ -41,7 +43,7 @@
                 <h3 class="footer-header">
                     <i class="bi bi-person"></i> Kontakt:
                 </h3>
-                <address>
+                <address class="text-lg">
                     <ul>
                         <li>
                             <i class="bi bi-envelope-fill mr-2"></i>
@@ -66,7 +68,7 @@
 
 <style scoped>
 .footer-block {
-    @apply lg:flex-grow flex justify-center items-center;
+    @apply lg:flex-grow flex justify-center items-center my-5;
 }
 .footer-header {
     @apply text-xl text-center font-semibold mb-2;

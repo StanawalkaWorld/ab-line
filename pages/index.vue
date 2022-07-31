@@ -39,7 +39,7 @@ export default defineComponent({
             >
         </div>
         <!-- First Content block -->
-        <TripleBlock class="my-40 xl:items-start" id="first-block">
+        <TripleBlock class="my-20 xl:items-start" id="first-block">
             <template #header>
                 <h3
                     class="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
@@ -50,7 +50,7 @@ export default defineComponent({
             </template>
             <template #left>
                 <div
-                    class="h-prose bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
+                    class="h-96 bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
                     :style="{
                         backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
                         transform: 'scaleX(-1)',
@@ -78,7 +78,7 @@ export default defineComponent({
 
             <template #right>
                 <div
-                    class="h-prose bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
+                    class="h-96 bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
                     :style="{
                         backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
                     }"
@@ -89,7 +89,7 @@ export default defineComponent({
         </TripleBlock>
         <ImagePowered
             :img-src="require('@/assets/img/pexels-marcin-jozwiak-trucks.webp')"
-            class="my-40"
+            class="my-20"
         >
             <template #header>
                 Lorem ipsum dolor sit amet consectetur.

@@ -22,22 +22,22 @@ export default defineComponent({
 
 <template>
     <div>
-        <DoubleBlock class="container mx-auto py-20" :class="optClasses">
+        <DoubleBlock class="container mx-auto" :class="optClasses">
             <template #left>
-                <div class="pr-10">
+                <div class="px-5 xl:pr-10">
                     <h3
-                        class="text-6xl py-4 mb-10 text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-rose-500 to-primary-500"
+                        class="text-4xl md:text-6xl <md:text-center py-4 mb-10 text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-rose-500 to-primary-500"
                     >
                         <slot name="header" />
                     </h3>
-                    <h3 class="text-xl text-justify">
+                    <h3 class="text-lg xl:text-xl text-justify">
                         <slot name="content" />
                     </h3>
                 </div>
             </template>
             <template #right>
                 <div
-                    class="w-full h-prose bgimage bg-contain bg-blend-multiply bg-true-gray-400 right-0"
+                    class="w-full h-prose bgimage bg-contain bg-blend-multiply bg-true-gray-400 right-0 <md:hidden"
                     :style="{
                         backgroundImage: `url('${imgSrc}')`,
                     }"

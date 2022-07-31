@@ -2,13 +2,13 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-    name: "ContactPage",
+    name: "AboutPage",
     head: {
-        title: "Kontakt - A&B Line",
+        title: "O nas - A&B Line",
     },
 });
 </script>
 
 <template>
-    <h1 class="text-3xl">Kontakt</h1>
+    <h1 class="text-3xl">O nas</h1>
 </template>
