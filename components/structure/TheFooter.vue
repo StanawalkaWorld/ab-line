@@ -41,7 +41,7 @@
                 <h3 class="footer-header">
                     <i class="bi bi-person"></i> Kontakt:
                 </h3>
-                <address>
+                <address class="text-lg">
                     <ul>
                         <li>
                             <i class="bi bi-envelope-fill mr-2"></i>
