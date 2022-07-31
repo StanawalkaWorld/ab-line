@@ -11,7 +11,7 @@
         <div class="footer-block">
             <div class="p-5 <lg:text-center">
                 <h3 class="footer-header">Nawigacja:</h3>
-                <ul>
+                <ul class="text-lg">
                     <li>
                         <NuxtLink to="/">Strona główna</NuxtLink>
                     </li>
@@ -66,7 +66,7 @@
 
 <style scoped>
 .footer-block {
-    @apply lg:flex-grow flex justify-center items-center;
+    @apply lg:flex-grow flex justify-center items-center my-5;
 }
 .footer-header {
     @apply text-xl text-center font-semibold mb-2;
