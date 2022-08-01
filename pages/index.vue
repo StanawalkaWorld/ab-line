@@ -2,9 +2,9 @@
 import { defineComponent } from "vue";
 import { useSmoothScroll } from "@/composables/scroll";
 import HeroBlock from "~/components/blocks/HeroBlock.vue";
-import TripleBlock from "../components/UI/TripleBlock.vue";
+import TripleBlock from "../components/blocks/TripleBlock.vue";
 import UButton from "~/components/UI/UButton.vue";
-import ImagePowered from "../components/UI/ImagePowered.vue";
+import ImagePowered from "../components/blocks/ImagePowered.vue";
 
 export default defineComponent({
     setup() {
