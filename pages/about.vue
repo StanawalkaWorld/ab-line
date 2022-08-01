@@ -25,6 +25,11 @@ export default defineComponent({
                         icon: "bi-telephone",
                         link: "tel:+48883766963",
                     },
+                    {
+                        name: "LinkedIn",
+                        icon: "bi-linkedin",
+                        link: "https://www.linkedin.com/in/andrzej-baranski-235643183",
+                    },
                 ],
             },
             {
@@ -54,15 +59,11 @@ export default defineComponent({
 
 <template>
     <div class="container mx-auto">
-        <div class="mb-20">
-            <h1 class="text-6xl text-center my-8">O nas</h1>
-            <p class="px-6">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci dolore quas maiores tempora neque, error in. Aspernatur
-                ab dolorem voluptate facere, dolores consequuntur atque cumque
-                vero ipsa illo sit neque tempora? Suscipit error optio delectus
-                ullam doloremque ut rem enim, dolores nihil deleniti cum et
-                sequi, tenetur, quia aut natus.
+        <div class="mb-20 text-center">
+            <h1 class="text-6xl my-8">O nas</h1>
+            <p class="px-6 text-lg">
+                Nasza firma zajmuje się prowadzeniem aut 13,6. Świadczymy usługi
+                w całej Europie ale najlepiej specjalizujemy się w Austrii.
             </p>
         </div>
         <div>
