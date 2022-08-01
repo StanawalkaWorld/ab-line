@@ -103,9 +103,14 @@ export default defineComponent({
                 <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10 rounded-lg">
                     <h2 class="text-4xl mb-5">Skontaktuj się z nami:</h2>
                     <!-- Address tag making text italic -->
-                    <address class="divide-y-2 divide-primary-50 text-lg">
+                    <address
+                        class="divide-primary-50 text-lg <xl:divide-y-2 xl:(flex divide-x-2)"
+                    >
                         <IconList :items="andrzejList" />
-                        <IconList class="mt-5 pt-5" :items="bartekList" />
+                        <IconList
+                            class="<xl:(mt-5 pt-5) xl:(ml-5 pl-5)"
+                            :items="bartekList"
+                        />
                     </address>
                 </div>
             </div>
