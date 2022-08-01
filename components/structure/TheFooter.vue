@@ -43,8 +43,12 @@
                 <h3 class="footer-header">
                     <i class="bi bi-person"></i> Kontakt:
                 </h3>
-                <address class="text-lg">
+                <address class="text-lg divide-y-2 divide-primary-50">
                     <ul>
+                        <li>
+                            <i class="bi bi-person-fill mr-2"></i>
+                            Andrzej Barański
+                        </li>
                         <li>
                             <i class="bi bi-envelope-fill mr-2"></i>
                             <a
@@ -57,6 +61,26 @@
                             <i class="bi bi-telephone-fill mr-2"></i>
                             <a href="tel:+48883766963" class="text-primary-200"
                                 >+48 883 766 963</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="mt-5 pt-5">
+                        <li>
+                            <i class="bi bi-person-fill mr-2"></i>
+                            Bartek Mroczkowski
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill mr-2"></i>
+                            <a
+                                href="mailto:bm.abline@gmail.com"
+                                class="text-primary-200"
+                                >bm.abline@gmail.com</a
+                            >
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill mr-2"></i>
+                            <a href="tel:+48517615625" class="text-primary-200"
+                                >+48 517 615 625</a
                             >
                         </li>
                     </ul>
