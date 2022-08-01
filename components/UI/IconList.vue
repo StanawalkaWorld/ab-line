@@ -29,10 +29,14 @@ export default defineComponent({
     <ul>
         <li v-for="item in listitems" :key="item.name">
             <i class="bi mr-2" :class="[item.icon, iconClasses]"></i>
-            <a v-if="item.link" class="text-primary-200" :href="item.link">{{
-                item.name
-            }}</a>
-            <span v-else>{{ item.name }}</span>
+            <a
+                v-if="item.link"
+                class="text-primary-200"
+                :class="item.classes"
+                :href="item.link"
+                >{{ item.name }}</a
+            >
+            <span v-else :class="item.classes">{{ item.name }}</span>
         </li>
     </ul>
 </template>
