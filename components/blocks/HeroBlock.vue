@@ -10,7 +10,7 @@ export default defineComponent({
 
 <template>
     <section
-        class="py-6 px-2 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-600 flex"
+        class="py-6 px-2 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-400 flex"
         :style="{
             backgroundImage: `url('${require('@/assets/img/pexels-mike-b-trucking.webp')}')`,
         }"
@@ -26,7 +26,9 @@ export default defineComponent({
                 ref="leftBlock"
                 class="sm:w-1/2 <lg:(text-center mb-6) fade-slide-from-left-anim"
             >
-                <h1 class="text-4xl lg:text-6xl font-semibold mb-8">
+                <h1
+                    class="text-4xl lg:text-6xl font-semibold mb-8 text-true-gray-200"
+                >
                     Profesjonalna spedycja
                     <nobr
                         >w Europie
