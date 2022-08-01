@@ -72,7 +72,7 @@ export default defineComponent({
                 <h1
                     class="text-4xl lg:text-6xl font-semibold mb-8 text-true-gray-200"
                 >
-                    Profesjonalna spedycja
+                    Profesjonalne prowadzenie aut
                     <nobr
                         >w Europie
                         <span
