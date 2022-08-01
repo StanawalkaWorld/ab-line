@@ -7,7 +7,7 @@ export default defineComponent({
     props: {
         items: {
             required: true,
-            type: Object,
+            type: Array,
         },
         iconClasses: {
             required: false,
