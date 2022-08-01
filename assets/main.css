@@ -8,3 +8,7 @@ body {
 .bgimage {
     @apply bg-no-repeat bg-center bg-cover;
 }
+
+.flag-round .fi {
+    border-radius: 0.375rem;
+}
