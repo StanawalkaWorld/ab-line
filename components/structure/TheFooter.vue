@@ -1,3 +1,52 @@
+<script lang="ts">
+import { defineComponent } from "vue";
+import IconList from "../UI/IconList.vue";
+import type { IconListItem } from "~/types/IconList";
+
+export default defineComponent({
+    name: "TheFooter",
+    components: { IconList },
+    setup() {
+        const andrzejList: IconListItem[] = [
+            {
+                name: "Andrzej Barański",
+                icon: "bi-person-fill",
+            },
+            {
+                name: "abline.office@gmail.com",
+                icon: "bi-envelope-fill",
+                link: "mailto:abline.office@gmail.com",
+            },
+            {
+                name: "+48 883 766 963",
+                icon: "bi-telephone-fill",
+                link: "tel:+48883766963",
+            },
+        ];
+        const bartekList: IconListItem[] = [
+            {
+                name: "Bartek Mroczkowski",
+                icon: "bi-person-fill",
+            },
+            {
+                name: "bm.abline@gmail.com",
+                icon: "bi-envelope-fill",
+                link: "mailto:bm.abline@gmail.com",
+            },
+            {
+                name: "+48 517 615 625",
+                icon: "bi-telephone-fill",
+                link: "tel:+48517615625",
+            },
+        ];
+        return {
+            andrzejList,
+            bartekList,
+        };
+    },
+});
+</script>
+
 <template>
     <footer class="bg-black text-white flex <lg:(flex-col items-center) p-10">
         <div class="footer-block <lg:w-full">
@@ -44,46 +93,8 @@
                     <i class="bi bi-person"></i> Kontakt:
                 </h3>
                 <address class="text-lg divide-y-2 divide-primary-50">
-                    <ul>
-                        <li>
-                            <i class="bi bi-person-fill mr-2"></i>
-                            Andrzej Barański
-                        </li>
-                        <li>
-                            <i class="bi bi-envelope-fill mr-2"></i>
-                            <a
-                                href="mailto:abline.office@gmail.com"
-                                class="text-primary-200"
-                                >abline.office@gmail.com</a
-                            >
-                        </li>
-                        <li>
-                            <i class="bi bi-telephone-fill mr-2"></i>
-                            <a href="tel:+48883766963" class="text-primary-200"
-                                >+48 883 766 963</a
-                            >
-                        </li>
-                    </ul>
-                    <ul class="mt-5 pt-5">
-                        <li>
-                            <i class="bi bi-person-fill mr-2"></i>
-                            Bartek Mroczkowski
-                        </li>
-                        <li>
-                            <i class="bi bi-envelope-fill mr-2"></i>
-                            <a
-                                href="mailto:bm.abline@gmail.com"
-                                class="text-primary-200"
-                                >bm.abline@gmail.com</a
-                            >
-                        </li>
-                        <li>
-                            <i class="bi bi-telephone-fill mr-2"></i>
-                            <a href="tel:+48517615625" class="text-primary-200"
-                                >+48 517 615 625</a
-                            >
-                        </li>
-                    </ul>
+                    <IconList :items="andrzejList" />
+                    <IconList class="mt-5 pt-5" :items="bartekList" />
                 </address>
             </div>
         </div>
