@@ -37,7 +37,7 @@ export default defineComponent({
             </template>
             <template #right>
                 <div
-                    class="w-full h-prose bgimage bg-contain bg-blend-multiply bg-true-gray-400 right-0 <md:hidden"
+                    class="w-full h-prose bgimage bg-contain bg-blend-multiply bg-true-gray-400 right-0 <lg:hidden"
                     :style="{
                         backgroundImage: `url('${imgSrc}')`,
                     }"
