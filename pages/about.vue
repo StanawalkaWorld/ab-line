@@ -53,15 +53,28 @@ export default defineComponent({
 </script>
 
 <template>
-    <div>
-        <h1 class="text-6xl text-center my-6">O nas</h1>
-        <div class="flex <lg:flex-col justify-around flex-wrap">
-            <ContactCard
-                v-for="contact in contacts"
-                :key="contact.name"
-                :contact-info="contact"
-                class=""
-            />
+    <div class="container mx-auto">
+        <div class="mb-20">
+            <h1 class="text-6xl text-center my-8">O nas</h1>
+            <p class="px-6">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Adipisci dolore quas maiores tempora neque, error in. Aspernatur
+                ab dolorem voluptate facere, dolores consequuntur atque cumque
+                vero ipsa illo sit neque tempora? Suscipit error optio delectus
+                ullam doloremque ut rem enim, dolores nihil deleniti cum et
+                sequi, tenetur, quia aut natus.
+            </p>
+        </div>
+        <div>
+            <h1 class="text-6xl text-center my-8">Nasz zespół</h1>
+            <div class="flex justify-center flex-wrap <md:flex-col">
+                <ContactCard
+                    v-for="contact in contacts"
+                    :key="contact.name"
+                    :contact-info="contact"
+                    class="mx-6 <md:mb-6"
+                />
+            </div>
         </div>
     </div>
 </template>
