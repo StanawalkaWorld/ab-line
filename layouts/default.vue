@@ -15,7 +15,11 @@ export default defineComponent({
 
 <template>
     <div>
-        <TopHeader class="my-5" />
+        <div
+            class="py-5 md:(sticky bg-primary-900 bg-opacity-50 top-0 z-10 py-2)"
+        >
+            <TopHeader />
+        </div>
         <main class="min-h-screen mb-5">
             <Nuxt />
         </main>
