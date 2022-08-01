@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
 @import "./animations.css";
 @import "./transitions.css";
 
@@ -10,5 +12,5 @@ body {
 }
 
 .flag-round .fi {
-    border-radius: 0.375rem;
+    @apply rounded;
 }
