@@ -1,10 +1,53 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import UButton from "../UI/UButton.vue";
+import IconList from "../UI/IconList.vue";
+import type { IconListItem } from "~/types/IconList";
 
 export default defineComponent({
     name: "HeroBlock",
-    components: { UButton },
+    components: { UButton, IconList },
+
+    setup() {
+        const andrzejList: IconListItem[] = [
+            {
+                name: "Andrzej Barański",
+                icon: "bi-person",
+                classes: "font-semibold",
+            },
+            {
+                name: "abline.office@gmail.com",
+                icon: "bi-envelope",
+                link: "mailto:abline.office@gmail.com",
+            },
+            {
+                name: "+48 883 766 963",
+                icon: "bi-telephone",
+                link: "tel:+48883766963",
+            },
+        ];
+        const bartekList: IconListItem[] = [
+            {
+                name: "Bartek Mroczkowski",
+                icon: "bi-person",
+                classes: "font-semibold",
+            },
+            {
+                name: "bm.abline@gmail.com",
+                icon: "bi-envelope",
+                link: "mailto:bm.abline@gmail.com",
+            },
+            {
+                name: "+48 517 615 625",
+                icon: "bi-telephone",
+                link: "tel:+48517615625",
+            },
+        ];
+        return {
+            andrzejList,
+            bartekList,
+        };
+    },
 });
 </script>
 
@@ -60,32 +103,9 @@ export default defineComponent({
                 <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10 rounded-lg">
                     <h2 class="text-4xl mb-5">Skontaktuj się z nami:</h2>
                     <!-- Address tag making text italic -->
-                    <address>
-                        <p>
-                            <!-- Name and lastname -->
-                            <i class="bi bi-person mr-2 text-xl"></i>
-                            <span class="text-lg font-semibold"
-                                >Andrzej Barański</span
-                            >
-                        </p>
-                        <p>
-                            <!-- E-mail -->
-                            <i class="bi bi-envelope mr-2 text-lg"></i>
-                            <a
-                                href="mailto:abline.office@gmail.com"
-                                class="text-primary-200 text-lg"
-                                >abline.office@gmail.com</a
-                            >
-                        </p>
-                        <p>
-                            <!-- Phone number -->
-                            <i class="bi bi-telephone mr-2 text-lg"></i>
-                            <a
-                                href="tel:+48883766963"
-                                class="text-primary-200 text-lg"
-                                >+48 883 766 963</a
-                            >
-                        </p>
+                    <address class="divide-y-2 divide-primary-50 text-lg">
+                        <IconList :items="andrzejList" />
+                        <IconList class="mt-5 pt-5" :items="bartekList" />
                     </address>
                 </div>
             </div>
