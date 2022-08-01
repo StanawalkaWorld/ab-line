@@ -16,27 +16,27 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="p-5 border border-primary-300 lg:rounded-md">
-        <div class="flex <lg:(flex-col mb-5)">
-            <div
-                class="bg-contain bg-center bg-no-repeat w-40 h-40 mr-5 rounded-full"
-                :style="{
-                    backgroundImage: `url('${contactInfo.profilePicture}')`,
-                }"
-            ></div>
-            <div class="h-full flex flex-col justify-between">
-                <div class="mb-3">
-                    <h4 class="text-xl font-semibold">
-                        {{ contactInfo.name }}
-                    </h4>
-                    <p class="text-primary-100 text-sm">
-                        {{ contactInfo.title }}
-                    </p>
-                </div>
-                <div>
-                    <IconList :items="contactInfo.contactInfo" />
-                </div>
+    <div class="rounded-md flex flex-col items-center">
+        <div
+            class="bg-contain bg-center bg-no-repeat w-40 h-40 rounded-full"
+            :style="{
+                backgroundImage: `url('${contactInfo.profilePicture}')`,
+            }"
+        ></div>
+        <div
+            class="flex flex-col py-6 text-center border-b border-true-gray-400"
+        >
+            <div>
+                <h4 class="text-xl font-semibold">
+                    {{ contactInfo.name }}
+                </h4>
+                <p class="text-primary-100 text-sm">
+                    {{ contactInfo.title }}
+                </p>
             </div>
+        </div>
+        <div class="mt-6">
+            <IconList :items="contactInfo.contactInfo" />
         </div>
     </div>
 </template>
