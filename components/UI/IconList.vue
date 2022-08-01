@@ -34,6 +34,7 @@ export default defineComponent({
                 class="text-primary-200"
                 :class="item.classes"
                 :href="item.link"
+                target="_blank"
                 >{{ item.name }}</a
             >
             <span v-else :class="item.classes">{{ item.name }}</span>
