@@ -42,10 +42,10 @@ export default defineComponent({
         <TripleBlock class="my-20 xl:items-start" id="first-block">
             <template #header>
                 <h3
-                    class="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
+                    class="text-4xl md:text-6xl xl:w-screen-md mx-auto text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
                 >
                     <!-- Gradient Header -->
-                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                    Co oferujemy?
                 </h3>
             </template>
             <template #left>
@@ -60,20 +60,14 @@ export default defineComponent({
                 </div>
             </template>
 
-            <p class="text-lg xl:text-xl <xl:p-5 sm:text-justify">
+            <p class="text-lg xl:text-xl <xl:p-5">
                 <!-- Main text -->
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-                minus quis eaque accusantium maiores, fuga consequuntur unde
-                esse soluta perferendis, quidem quia. Quisquam consequuntur
-                reprehenderit eligendi, explicabo velit at debitis earum alias
-                consequatur itaque omnis quod autem voluptate. Nobis, magni,
-                commodi quis neque praesentium ex esse corrupti asperiores
-                molestiae, officia earum nostrum. Qui saepe molestiae voluptatum
-                sunt ab aliquid deserunt numquam possimus. Mollitia alias animi
-                quibusdam doloribus nostrum, soluta molestias nesciunt, ex
-                quidem consequuntur magni dicta saepe, eius inventore fugiat
-                dolore voluptas? Molestiae aperiam deleniti reprehenderit quod
-                consequatur voluptates ea!
+                <ul class="list-disc flag-round font-roboto font-light">
+                    <li>Profesjonalne prowadzenie aut 13,6 na terenie <span class="fi fi-eu"></span> Europy, ze specjalizacją w <span class="fi fi-at"></span> Austrii.</li>
+                    <li>Pewność dostarczenia ładunku do celu.</li>
+                    <li>Bezproblemową obsługę doładunków.</li>
+                    <li>Atrakcyjną cenę.</li>
+                </ul>
             </p>
 
             <template #right>
