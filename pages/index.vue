@@ -60,15 +60,19 @@ export default defineComponent({
                 </div>
             </template>
 
-            <p class="text-lg xl:text-xl <xl:p-5">
+            <div class="text-lg xl:text-xl <xl:p-5">
                 <!-- Main text -->
                 <ul class="list-disc flag-round font-roboto font-light">
-                    <li>Profesjonalne prowadzenie aut 13,6 na terenie <span class="fi fi-eu"></span> Europy, ze specjalizacją w <span class="fi fi-at"></span> Austrii.</li>
+                    <li>
+                        Profesjonalne prowadzenie aut 13,6 na terenie
+                        <span class="fi fi-eu"></span> Europy, ze specjalizacją
+                        w <span class="fi fi-at"></span> Austrii.
+                    </li>
                     <li>Pewność dostarczenia ładunku do celu.</li>
                     <li>Bezproblemową obsługę doładunków.</li>
                     <li>Atrakcyjną cenę.</li>
                 </ul>
-            </p>
+            </div>
 
             <template #right>
                 <div
