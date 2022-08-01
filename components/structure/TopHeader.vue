@@ -52,7 +52,7 @@ export default defineComponent({
                 v-for="link in navlinks"
                 :key="link.name"
                 :to="link.to"
-                class="<md:w-full py-5 text-center md:(p-10 px-5 hover:(text-primary-100 bg-dominant-700 border-b-2 border-primary-200)) transition-all duration-75"
+                class="<md:w-full py-5 text-center md:(p-3 px-5) hover:(text-primary-100 bg-dominant-700 border-b-2 border-primary-200) transition-all duration-75"
             >
                 <i :class="['bi', link.icon ?? '', 'text-sm', 'mr-1']"></i>
                 {{ link.name }}
