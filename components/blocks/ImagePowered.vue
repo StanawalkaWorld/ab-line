@@ -1,6 +1,6 @@
 <script>
 import { defineComponent } from "vue";
-import DoubleBlock from "@/components/UI/DoubleBlock.vue";
+import DoubleBlock from "./DoubleBlock.vue";
 
 export default defineComponent({
     name: "ImagePowered",
