@@ -95,11 +95,11 @@
 
 .drive-in-from-left {
     animation-name: driveinfromleft;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.81, -0.04, 0.495, 0.975);
 }
 .drive-in-from-right {
     animation-name: driveinfromright;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.81, -0.04, 0.495, 0.975);
 }
