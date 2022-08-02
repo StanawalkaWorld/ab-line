@@ -30,7 +30,7 @@ export default defineComponent({
                 <h4 class="text-xl font-semibold">
                     {{ contactInfo.name }}
                 </h4>
-                <p class="text-primary-100 text-sm">
+                <p class="text-primary-100 text-sm min-h-5">
                     {{ contactInfo.title }}
                 </p>
             </div>
