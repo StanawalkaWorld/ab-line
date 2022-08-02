@@ -1,6 +1,6 @@
 <script>
 import { defineComponent } from "vue";
-import DoubleBlock from "@/components/UI/DoubleBlock.vue";
+import DoubleBlock from "./DoubleBlock.vue";
 
 export default defineComponent({
     name: "ImagePowered",
@@ -26,7 +26,7 @@ export default defineComponent({
             <template #left>
                 <div class="px-5 xl:pr-10">
                     <h3
-                        class="text-4xl md:text-6xl <md:text-center py-4 mb-10 text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-rose-500 to-primary-500"
+                        class="text-4xl md:text-6xl <md:text-center py-4 mb-10 text-transparent font-bold bg-clip-text bg-gradient-to-r from-rose-500 to-primary-500"
                     >
                         <slot name="header" />
                     </h3>
@@ -37,7 +37,7 @@ export default defineComponent({
             </template>
             <template #right>
                 <div
-                    class="w-full h-prose bgimage bg-contain bg-blend-multiply bg-true-gray-400 right-0 <md:hidden"
+                    class="w-full h-prose bgimage bg-contain bg-blend-multiply bg-true-gray-400 right-0 <lg:hidden"
                     :style="{
                         backgroundImage: `url('${imgSrc}')`,
                     }"

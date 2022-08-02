@@ -20,7 +20,7 @@ export default {
             {
                 name: "keywords",
                 content:
-                    "transport, polska, krajowy, tir, ciężarówka, ciezarowka, abline, a&b, a8b, przewóz, pomorskie",
+                    "transport, polska, krajowy, tir, ciężarówka, ciezarowka, abline, a&b, a8b, przewóz, pomorskie, profesjonalne, prowadzenie, aut 13 6, europa, europie, austrii, austria",
             },
             { name: "format-detection", content: "telephone=no" },
         ],

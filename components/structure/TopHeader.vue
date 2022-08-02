@@ -36,15 +36,14 @@ export default defineComponent({
 </script>
 
 <template>
-    <header
-        class="container mx-auto flex flex-col md:flex-row fade-slide-from-top-anim"
-    >
+    <header class="flex flex-col md:flex-row fade-slide-from-top-anim">
         <NuxtLink to="/" class="flex justify-center <md:mb-5">
             <div
                 class="bg-contain bg-center h-20 w-full md:w-20 bg-no-repeat"
                 :style="{
                     backgroundImage: `url('${require('@/assets/img/logo/full-new.webp')}')`,
                 }"
+                aria-label="Logo strony, prowadzący do strony głównej"
             ></div>
         </NuxtLink>
         <nav class="flex flex-col md:flex-row items-center ml-10 children:mr-6">
@@ -52,7 +51,7 @@ export default defineComponent({
                 v-for="link in navlinks"
                 :key="link.name"
                 :to="link.to"
-                class="<md:w-full py-5 text-center md:(p-10 px-5 hover:(text-primary-100 bg-dominant-700 border-b-2 border-primary-200)) transition-all duration-75"
+                class="<md:w-full py-5 text-center md:(p-3 px-5) hover:(text-primary-100 bg-dominant-700 border-b-2 border-primary-200) transition-all duration-75"
             >
                 <i :class="['bi', link.icon ?? '', 'text-sm', 'mr-1']"></i>
                 {{ link.name }}

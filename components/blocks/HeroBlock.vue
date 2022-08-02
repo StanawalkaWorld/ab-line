@@ -1,16 +1,59 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import UButton from "../UI/UButton.vue";
+import IconList from "../UI/IconList.vue";
+import type { IconListItem } from "~/types/IconList";
 
 export default defineComponent({
     name: "HeroBlock",
-    components: { UButton },
+    components: { UButton, IconList },
+
+    setup() {
+        const andrzejList: IconListItem[] = [
+            {
+                name: "Andrzej Barański",
+                icon: "bi-person",
+                classes: "font-semibold",
+            },
+            {
+                name: "abline.office@gmail.com",
+                icon: "bi-envelope",
+                link: "mailto:abline.office@gmail.com",
+            },
+            {
+                name: "+48 883 766 963",
+                icon: "bi-telephone",
+                link: "tel:+48883766963",
+            },
+        ];
+        const bartekList: IconListItem[] = [
+            {
+                name: "Bartek Mroczkowski",
+                icon: "bi-person",
+                classes: "font-semibold",
+            },
+            {
+                name: "bm.abline@gmail.com",
+                icon: "bi-envelope",
+                link: "mailto:bm.abline@gmail.com",
+            },
+            {
+                name: "+48 517 615 625",
+                icon: "bi-telephone",
+                link: "tel:+48517615625",
+            },
+        ];
+        return {
+            andrzejList,
+            bartekList,
+        };
+    },
 });
 </script>
 
 <template>
     <section
-        class="py-6 px-2 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-600 flex"
+        class="py-6 px-2 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-500 flex"
         :style="{
             backgroundImage: `url('${require('@/assets/img/pexels-mike-b-trucking.webp')}')`,
         }"
@@ -26,8 +69,10 @@ export default defineComponent({
                 ref="leftBlock"
                 class="sm:w-1/2 <lg:(text-center mb-6) fade-slide-from-left-anim"
             >
-                <h1 class="text-4xl lg:text-6xl font-semibold mb-8">
-                    Profesjonalna spedycja
+                <h1
+                    class="text-4xl lg:text-6xl font-semibold mb-8 text-true-gray-200"
+                >
+                    Profesjonalne prowadzenie aut
                     <nobr
                         >w Europie
                         <span
@@ -58,32 +103,14 @@ export default defineComponent({
                 <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10 rounded-lg">
                     <h2 class="text-4xl mb-5">Skontaktuj się z nami:</h2>
                     <!-- Address tag making text italic -->
-                    <address>
-                        <p>
-                            <!-- Name and lastname -->
-                            <i class="bi bi-person mr-2 text-xl"></i>
-                            <span class="text-lg font-semibold"
-                                >Andrzej Barański</span
-                            >
-                        </p>
-                        <p>
-                            <!-- E-mail -->
-                            <i class="bi bi-envelope mr-2 text-lg"></i>
-                            <a
-                                href="mailto:abline.office@gmail.com"
-                                class="text-primary-200 text-lg"
-                                >abline.office@gmail.com</a
-                            >
-                        </p>
-                        <p>
-                            <!-- Phone number -->
-                            <i class="bi bi-telephone mr-2 text-lg"></i>
-                            <a
-                                href="tel:+48883766963"
-                                class="text-primary-200 text-lg"
-                                >+48 883 766 963</a
-                            >
-                        </p>
+                    <address
+                        class="divide-primary-50 text-lg <xl:divide-y-2 xl:(flex divide-x-2)"
+                    >
+                        <IconList :items="andrzejList" />
+                        <IconList
+                            class="<xl:(mt-5 pt-5) xl:(ml-5 pl-5)"
+                            :items="bartekList"
+                        />
                     </address>
                 </div>
             </div>

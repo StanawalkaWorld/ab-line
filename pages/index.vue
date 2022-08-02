@@ -2,9 +2,9 @@
 import { defineComponent } from "vue";
 import { useSmoothScroll } from "@/composables/scroll";
 import HeroBlock from "~/components/blocks/HeroBlock.vue";
-import TripleBlock from "../components/UI/TripleBlock.vue";
+import TripleBlock from "../components/blocks/TripleBlock.vue";
 import UButton from "~/components/UI/UButton.vue";
-import ImagePowered from "../components/UI/ImagePowered.vue";
+import ImagePowered from "../components/blocks/ImagePowered.vue";
 
 export default defineComponent({
     setup() {
@@ -39,13 +39,20 @@ export default defineComponent({
             >
         </div>
         <!-- First Content block -->
-        <TripleBlock class="my-20 xl:items-start" id="first-block">
+        <TripleBlock
+            class="my-20 xl:items-start"
+            id="first-block"
+            :animations="{
+                left: 'drive-in-from-left',
+                right: 'drive-in-from-right',
+            }"
+        >
             <template #header>
                 <h3
-                    class="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
+                    class="text-4xl md:text-6xl xl:w-screen-md mx-auto text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
                 >
                     <!-- Gradient Header -->
-                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                    Co oferujemy?
                 </h3>
             </template>
             <template #left>
@@ -60,21 +67,22 @@ export default defineComponent({
                 </div>
             </template>
 
-            <p class="text-lg xl:text-xl <xl:p-5 sm:text-justify">
+            <div
+                class="text-lg xl:text-xl <xl:p-10 font-roboto font-light flag-round"
+            >
                 <!-- Main text -->
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-                minus quis eaque accusantium maiores, fuga consequuntur unde
-                esse soluta perferendis, quidem quia. Quisquam consequuntur
-                reprehenderit eligendi, explicabo velit at debitis earum alias
-                consequatur itaque omnis quod autem voluptate. Nobis, magni,
-                commodi quis neque praesentium ex esse corrupti asperiores
-                molestiae, officia earum nostrum. Qui saepe molestiae voluptatum
-                sunt ab aliquid deserunt numquam possimus. Mollitia alias animi
-                quibusdam doloribus nostrum, soluta molestias nesciunt, ex
-                quidem consequuntur magni dicta saepe, eius inventore fugiat
-                dolore voluptas? Molestiae aperiam deleniti reprehenderit quod
-                consequatur voluptates ea!
-            </p>
+                <p class="mb-5">
+                    Oferujemy profesjonalne prowadzenie aut 13,6. Specjalizujemy
+                    się w <span class="fi fi-at"></span> Austrii, ale nasze
+                    usługi obejmują również całą
+                    <span class="fi fi-eu"></span> Europę. Zapewniamy:
+                </p>
+                <ul class="list-disc <lg:text-center">
+                    <li>Pewność dostarczenia ładunku do celu.</li>
+                    <li>Bezproblemową obsługę doładunków.</li>
+                    <li>Atrakcyjną cenę.</li>
+                </ul>
+            </div>
 
             <template #right>
                 <div
