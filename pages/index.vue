@@ -60,7 +60,7 @@ export default defineComponent({
                 </div>
             </template>
 
-            <div class="text-lg xl:text-xl <xl:p-5">
+            <div class="text-lg xl:text-xl <xl:p-10">
                 <!-- Main text -->
                 <ul class="list-disc flag-round font-roboto font-light">
                     <li>
