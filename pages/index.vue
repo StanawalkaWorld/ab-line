@@ -65,11 +65,12 @@ export default defineComponent({
             >
                 <!-- Main text -->
                 <p class="mb-5">
-                    Profesjonalne prowadzenie aut 13,6 na terenie
-                    <span class="fi fi-eu"></span> Europy, ze specjalizacją w
-                    <span class="fi fi-at"></span> Austrii.
+                    Oferujemy profesjonalne prowadzenie aut 13,6. Specjalizujemy
+                    się w <span class="fi fi-at"></span> Austrii, ale nasze
+                    usługi obejmują również całą
+                    <span class="fi fi-eu"></span> Europę. Zapewniamy:
                 </p>
-                <ul class="list-disc">
+                <ul class="list-disc <lg:text-center">
                     <li>Pewność dostarczenia ładunku do celu.</li>
                     <li>Bezproblemową obsługę doładunków.</li>
                     <li>Atrakcyjną cenę.</li>
