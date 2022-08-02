@@ -68,12 +68,12 @@ export default defineComponent({
         </div>
         <div>
             <h1 class="text-6xl text-center my-8">Nasz zespół</h1>
-            <div class="flex justify-center flex-wrap <md:flex-col">
+            <div class="flex justify-center flex-wrap <sm:flex-col">
                 <ContactCard
                     v-for="contact in contacts"
                     :key="contact.name"
                     :contact-info="contact"
-                    class="mx-6 <md:mb-6"
+                    class="mx-6 <sm:mb-10"
                 />
             </div>
         </div>
