@@ -39,7 +39,14 @@ export default defineComponent({
             >
         </div>
         <!-- First Content block -->
-        <TripleBlock class="my-20 xl:items-start" id="first-block">
+        <TripleBlock
+            class="my-20 xl:items-start"
+            id="first-block"
+            :animations="{
+                left: 'drive-in-from-left',
+                right: 'drive-in-from-right',
+            }"
+        >
             <template #header>
                 <h3
                     class="text-4xl md:text-6xl xl:w-screen-md mx-auto text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
