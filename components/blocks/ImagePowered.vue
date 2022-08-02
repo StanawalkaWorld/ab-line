@@ -26,7 +26,7 @@ export default defineComponent({
             <template #left>
                 <div class="px-5 xl:pr-10">
                     <h3
-                        class="text-4xl md:text-6xl <md:text-center py-4 mb-10 text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-rose-500 to-primary-500"
+                        class="text-4xl md:text-6xl <md:text-center py-4 mb-10 text-transparent font-bold bg-clip-text bg-gradient-to-r from-rose-500 to-primary-500"
                     >
                         <slot name="header" />
                     </h3>
