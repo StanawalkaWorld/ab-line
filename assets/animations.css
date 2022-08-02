@@ -54,6 +54,25 @@
     }
 }
 
+/* Drive in from left */
+
+@keyframes driveinfromleft {
+    0% {
+        transform: translateX(-10vw);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Animation classes */
+
 .fade-slide-from-top-anim {
     animation: fadeslidefromtop 0.5s;
 }
@@ -65,4 +84,10 @@
 }
 .fade-slide-from-bottom-anim {
     animation: fadeslidefrombottom 0.5s;
+}
+
+.drive-in-from-left {
+    animation-name: driveinfromleft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
