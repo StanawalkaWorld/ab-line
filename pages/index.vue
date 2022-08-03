@@ -95,8 +95,7 @@ export default defineComponent({
                 <p class="mb-5">
                     Oferujemy profesjonalne prowadzenie aut 13,6. Specjalizujemy
                     się w <span class="fi fi-at"></span> Austrii, ale nasze
-                    usługi obejmują również całą
-                    <span class="fi fi-eu"></span> Europę.
+                    usługi obejmują całą <span class="fi fi-eu"></span> Europę.
                 </p>
             </div>
 
@@ -118,7 +117,7 @@ export default defineComponent({
             class="my-20"
         >
             <template #header>
-                Jeżeli wybierzesz naszą firmę, zapewnimy tobie:
+                Jeżeli wybierzesz naszą firmę, zapewnimy Tobie:
             </template>
             <template #content>
                 <ul>
