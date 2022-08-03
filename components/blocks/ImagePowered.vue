@@ -25,7 +25,7 @@ export default defineComponent({
                 >
                     <slot name="header" />
                 </GradientText>
-                <p class="text-lg xl:text-xl text-justify">
+                <p class="text-lg xl:text-xl">
                     <slot name="content" />
                 </p>
             </div>
