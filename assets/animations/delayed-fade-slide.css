@@ -1,0 +1,83 @@
+/* Slide in from LEFT */
+@keyframes fadeslidefromleft {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-10vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Slide in from RIGHT */
+@keyframes fadeslidefromright {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(10vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Slide in from TOP */
+@keyframes fadeslidefromtop {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-5vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Slide in from BOTTOM */
+@keyframes fadeslidefrombottom {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(5vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation Classes */
+
+.fade-slide-from-top-delay {
+    animation-name: fadeslidefromtop;
+    animation-duration: 1s;
+}
+.fade-slide-from-right-delay {
+    animation-name: fadeslidefromright;
+    animation-duration: 1s;
+}
+.fade-slide-from-left-delay {
+    animation-name: fadeslidefromleft;
+    animation-duration: 1s;
+}
+.fade-slide-from-bottom-delay {
+    animation-name: fadeslidefrombottom;
+    animation-duration: 1s;
+}
