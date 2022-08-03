@@ -68,7 +68,7 @@ export default defineComponent({
                         <NuxtLink to="/pricing">Wycena</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/contact">Kontakt</NuxtLink>
+                        <NuxtLink to="/about">O nas</NuxtLink>
                     </li>
                 </ul>
             </div>
