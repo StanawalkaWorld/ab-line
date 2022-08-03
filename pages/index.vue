@@ -112,7 +112,9 @@ export default defineComponent({
             </template>
         </TripleBlock>
         <ImagePowered
-            :img-src="require('@/assets/img/pexels-marcin-jozwiak-trucks.webp')"
+            :img-src="
+                require('@/assets/img/pexels-marcin-jozwiak-trucks-lowres.webp')
+            "
             class="my-20"
         >
             <template #header>
