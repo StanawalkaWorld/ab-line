@@ -1,10 +1,11 @@
 <script>
 import { defineComponent } from "vue";
+import GradientText from "../UI/GradientText.vue";
 import DoubleBlock from "./DoubleBlock.vue";
 
 export default defineComponent({
     name: "ImagePowered",
-    components: { DoubleBlock },
+    components: { DoubleBlock, GradientText },
     props: {
         imgSrc: {
             type: String,
@@ -19,14 +20,14 @@ export default defineComponent({
     <DoubleBlock class="container mx-auto">
         <template #left>
             <div class="px-5 xl:pr-10">
-                <h3
-                    class="text-4xl md:text-6xl <md:text-center py-4 mb-10 text-transparent font-bold bg-clip-text bg-gradient-to-r from-rose-500 to-primary-500"
+                <GradientText
+                    class="text-4xl md:text-6xl <md:text-center py-4 mb-10"
                 >
                     <slot name="header" />
-                </h3>
-                <h3 class="text-lg xl:text-xl text-justify">
+                </GradientText>
+                <p class="text-lg xl:text-xl text-justify">
                     <slot name="content" />
-                </h3>
+                </p>
             </div>
         </template>
         <template #right>

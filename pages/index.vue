@@ -5,6 +5,7 @@ import HeroBlock from "~/components/blocks/HeroBlock.vue";
 import TripleBlock from "../components/blocks/TripleBlock.vue";
 import UButton from "~/components/UI/UButton.vue";
 import ImagePowered from "../components/blocks/ImagePowered.vue";
+import GradientText from "~/components/UI/GradientText.vue";
 
 interface OfferListItem {
     name: string;
@@ -38,7 +39,7 @@ export default defineComponent({
             ciezarowka: require("@/assets/img/ciezarowka-wycieta.webp"),
         };
     },
-    components: { HeroBlock, TripleBlock, UButton, ImagePowered },
+    components: { HeroBlock, TripleBlock, UButton, ImagePowered, GradientText },
     head: {
         title: "Strona główna - A&B Line",
     },
@@ -80,12 +81,12 @@ export default defineComponent({
                 </div>
             </template>
 
-            <h3
-                class="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
+            <GradientText
+                class="text-4xl md:text-6xl text-center p-3 mb-5 xl:mb-20"
             >
                 <!-- Gradient Header -->
                 Co oferujemy?
-            </h3>
+            </GradientText>
 
             <div
                 class="text-lg xl:text-xl <xl:p-10 font-roboto font-light flag-round"
