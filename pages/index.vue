@@ -35,6 +35,7 @@ export default defineComponent({
         return {
             toFirstBlock,
             offer,
+            ciezarowka: require("@/assets/img/ciezarowka-wycieta.webp"),
         };
     },
     components: { HeroBlock, TripleBlock, UButton, ImagePowered },
@@ -71,7 +72,7 @@ export default defineComponent({
                 <div
                     class="h-96 bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
                     :style="{
-                        backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
+                        backgroundImage: `url('${ciezarowka}')`,
                         transform: 'scaleX(-1)',
                     }"
                 >
@@ -102,7 +103,7 @@ export default defineComponent({
                 <div
                     class="h-96 bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
                     :style="{
-                        backgroundImage: `url('${require('@/assets/img/ciezarowka-wycieta.webp')}')`,
+                        backgroundImage: `url('${ciezarowka}')`,
                     }"
                 >
                     <!-- Right Image -->
