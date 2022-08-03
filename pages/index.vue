@@ -94,17 +94,8 @@ export default defineComponent({
                     Oferujemy profesjonalne prowadzenie aut 13,6. Specjalizujemy
                     się w <span class="fi fi-at"></span> Austrii, ale nasze
                     usługi obejmują również całą
-                    <span class="fi fi-eu"></span> Europę. Zapewniamy:
+                    <span class="fi fi-eu"></span> Europę.
                 </p>
-                <ul>
-                    <li v-for="item in offer" :key="item.name" class="mb-3">
-                        <span
-                            class="bi bi-caret-right-fill text-primary-300"
-                            :class="item.iconClasses"
-                        ></span>
-                        <span :class="item.textClasses">{{ item.name }}</span>
-                    </li>
-                </ul>
             </div>
 
             <template #right>
@@ -123,17 +114,18 @@ export default defineComponent({
             class="my-20"
         >
             <template #header>
-                Lorem ipsum dolor sit amet consectetur.
+                Jeżeli wybierzesz naszą firmę, zapewnimy tobie:
             </template>
             <template #content>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Placeat laudantium libero vel alias. Blanditiis deserunt porro
-                dolore eum magnam commodi veritatis quidem laboriosam placeat
-                necessitatibus distinctio quos et dolorem nesciunt, facilis
-                officia delectus? Inventore quam aliquam quae voluptatibus,
-                assumenda natus debitis quasi soluta. Quis architecto non
-                reprehenderit expedita nostrum, quidem provident nesciunt rerum
-                perspiciatis facilis inventore fugiat voluptatem mollitia porro!
+                <ul>
+                    <li v-for="item in offer" :key="item.name" class="mb-3">
+                        <span
+                            class="bi bi-caret-right-fill text-primary-300"
+                            :class="item.iconClasses"
+                        ></span>
+                        <span :class="item.textClasses">{{ item.name }}</span>
+                    </li>
+                </ul>
             </template>
         </ImagePowered>
     </div>
