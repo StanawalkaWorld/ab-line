@@ -66,14 +66,7 @@ export default defineComponent({
                 right: 'drive-in-from-right',
             }"
         >
-            <template #header>
-                <h3
-                    class="text-4xl md:text-6xl xl:w-screen-md mx-auto text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
-                >
-                    <!-- Gradient Header -->
-                    Co oferujemy?
-                </h3>
-            </template>
+            <template #header> </template>
             <template #left>
                 <div
                     class="h-96 bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
@@ -85,6 +78,13 @@ export default defineComponent({
                     <!-- Left Image -->
                 </div>
             </template>
+
+            <h3
+                class="text-4xl md:text-6xl text-center font-bold text-transparent bg-clip-text p-3 mb-5 xl:mb-20 bg-gradient-to-r from-rose-500 to-primary-500"
+            >
+                <!-- Gradient Header -->
+                Co oferujemy?
+            </h3>
 
             <div
                 class="text-lg xl:text-xl <xl:p-10 font-roboto font-light flag-round"
