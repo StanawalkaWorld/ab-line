@@ -6,6 +6,12 @@ import TripleBlock from "../components/blocks/TripleBlock.vue";
 import UButton from "~/components/UI/UButton.vue";
 import ImagePowered from "../components/blocks/ImagePowered.vue";
 
+interface OfferListItem {
+    name: string;
+    iconClasses?: string;
+    textClasses?: string;
+}
+
 export default defineComponent({
     setup() {
         const { scrollTo } = useSmoothScroll();
@@ -14,8 +20,21 @@ export default defineComponent({
             scrollTo("#first-block");
         };
 
+        const offer: OfferListItem[] = [
+            {
+                name: "Pewność dostarczenia ładunku do celu.",
+            },
+            {
+                name: "Bezproblemową obsługę doładunków.",
+            },
+            {
+                name: "Atrakcyjną cenę.",
+            },
+        ];
+
         return {
             toFirstBlock,
+            offer,
         };
     },
     components: { HeroBlock, TripleBlock, UButton, ImagePowered },
@@ -77,10 +96,14 @@ export default defineComponent({
                     usługi obejmują również całą
                     <span class="fi fi-eu"></span> Europę. Zapewniamy:
                 </p>
-                <ul class="list-disc <lg:text-center">
-                    <li>Pewność dostarczenia ładunku do celu.</li>
-                    <li>Bezproblemową obsługę doładunków.</li>
-                    <li>Atrakcyjną cenę.</li>
+                <ul>
+                    <li v-for="item in offer" :key="item.name" class="mb-3">
+                        <span
+                            class="bi bi-caret-right-fill text-primary-300"
+                            :class="item.iconClasses"
+                        ></span>
+                        <span :class="item.textClasses">{{ item.name }}</span>
+                    </li>
                 </ul>
             </div>
 
