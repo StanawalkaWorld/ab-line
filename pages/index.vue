@@ -67,8 +67,8 @@ export default defineComponent({
                 left: 'drive-in-from-left',
                 right: 'drive-in-from-right',
             }"
+            :threshold="0.6"
         >
-            <template #header> </template>
             <template #left>
                 <div
                     class="h-96 bg-contain bg-center m-10 bg-no-repeat filter brightness-75 <xl:hidden"
