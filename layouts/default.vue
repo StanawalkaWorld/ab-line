@@ -38,7 +38,7 @@ export default defineComponent({
         </main>
         <TheFooter />
         <button
-            class="text-5xl fixed right-8 bottom-8 transition-all ease-linear bg-primary-600 hover:bg-primary-400 rounded-full p-2"
+            class="text-3xl md:text-5xl fixed right-4 md:right-8 bottom-16 md:bottom-8 transition-all ease-linear bg-primary-600 hover:bg-primary-400 rounded-full w-12 h-12 md:(w-16 h-16)"
             @click="toTop"
         >
             <i class="bi bi-arrow-up"></i>
