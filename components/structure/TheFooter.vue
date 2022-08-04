@@ -7,10 +7,11 @@ export default defineComponent({
     name: "TheFooter",
     components: { IconList },
     setup() {
-        const andrzejList: IconListItem[] = [
+        const contactList: IconListItem[] = [
             {
-                name: "Andrzej Barański",
-                icon: "bi-person-fill",
+                name: "bm.abline@gmail.com",
+                icon: "bi-envelope-fill",
+                link: "mailto:bm.abline@gmail.com",
             },
             {
                 name: "abline.office@gmail.com",
@@ -22,10 +23,15 @@ export default defineComponent({
                 icon: "bi-telephone-fill",
                 link: "tel:+48883766963",
             },
+            {
+                name: "+48 517 615 625",
+                icon: "bi-telephone-fill",
+                link: "tel:+48517615625",
+            },
         ];
 
         return {
-            andrzejList,
+            contactList,
         };
     },
 });
@@ -77,7 +83,7 @@ export default defineComponent({
                     <i class="bi bi-person"></i> Kontakt:
                 </h3>
                 <address class="text-lg">
-                    <IconList :items="andrzejList" />
+                    <IconList :items="contactList" />
                 </address>
             </div>
         </div>
