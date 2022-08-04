@@ -53,7 +53,7 @@ export default defineComponent({
 
 <template>
     <section
-        class="py-6 px-2 min-h-96 bgimage bg-fixed bg-blend-multiply bg-true-gray-500 flex"
+        class="py-6 px-2 min-h-96 bgimage md:bg-fixed bg-blend-multiply bg-true-gray-500 flex"
         :style="{
             backgroundImage: `url('${require('@/assets/img/pexels-mike-b-trucking-lowres.webp')}')`,
         }"
