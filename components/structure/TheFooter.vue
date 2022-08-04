@@ -23,25 +23,9 @@ export default defineComponent({
                 link: "tel:+48883766963",
             },
         ];
-        const bartekList: IconListItem[] = [
-            {
-                name: "Bartek Mroczkowski",
-                icon: "bi-person-fill",
-            },
-            {
-                name: "bm.abline@gmail.com",
-                icon: "bi-envelope-fill",
-                link: "mailto:bm.abline@gmail.com",
-            },
-            {
-                name: "+48 517 615 625",
-                icon: "bi-telephone-fill",
-                link: "tel:+48517615625",
-            },
-        ];
+
         return {
             andrzejList,
-            bartekList,
         };
     },
 });
@@ -92,9 +76,8 @@ export default defineComponent({
                 <h3 class="footer-header">
                     <i class="bi bi-person"></i> Kontakt:
                 </h3>
-                <address class="text-lg divide-y-2 divide-primary-50">
+                <address class="text-lg">
                     <IconList :items="andrzejList" />
-                    <IconList class="mt-5 pt-5" :items="bartekList" />
                 </address>
             </div>
         </div>
