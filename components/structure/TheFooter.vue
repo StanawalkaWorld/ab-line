@@ -9,11 +9,6 @@ export default defineComponent({
     setup() {
         const contactList: IconListItem[] = [
             {
-                name: "bm.abline@gmail.com",
-                icon: "bi-envelope-fill",
-                link: "mailto:bm.abline@gmail.com",
-            },
-            {
                 name: "abline.office@gmail.com",
                 icon: "bi-envelope-fill",
                 link: "mailto:abline.office@gmail.com",
@@ -22,11 +17,6 @@ export default defineComponent({
                 name: "+48 883 766 963",
                 icon: "bi-telephone-fill",
                 link: "tel:+48883766963",
-            },
-            {
-                name: "+48 517 615 625",
-                icon: "bi-telephone-fill",
-                link: "tel:+48517615625",
             },
         ];
 
