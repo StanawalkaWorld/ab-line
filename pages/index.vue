@@ -7,12 +7,6 @@ import UButton from "~/components/UI/UButton.vue";
 import ImagePowered from "../components/blocks/ImagePowered.vue";
 import GradientText from "~/components/UI/GradientText.vue";
 
-interface OfferListItem {
-    name: string;
-    iconClasses?: string;
-    textClasses?: string;
-}
-
 export default defineComponent({
     setup() {
         const { scrollTo } = useSmoothScroll();
@@ -21,16 +15,12 @@ export default defineComponent({
             scrollTo("#first-block");
         };
 
-        const offer: OfferListItem[] = [
-            {
-                name: "Pewność dostarczenia ładunku do celu.",
-            },
-            {
-                name: "Bezproblemową obsługę doładunków.",
-            },
-            {
-                name: "Atrakcyjną cenę.",
-            },
+        const offer: string[] = [
+            "Pewność dostarczenia ładunku do celu.",
+
+            "Bezproblemową obsługę doładunków.",
+
+            "Atrakcyjną cenę.",
         ];
 
         return {
@@ -121,12 +111,11 @@ export default defineComponent({
             </template>
             <template #content>
                 <ul>
-                    <li v-for="item in offer" :key="item.name" class="mb-3">
+                    <li v-for="item in offer" :key="item" class="mb-3">
                         <span
                             class="bi bi-caret-right-fill text-primary-300"
-                            :class="item.iconClasses"
                         ></span>
-                        <span :class="item.textClasses">{{ item.name }}</span>
+                        <span>{{ item }}</span>
                     </li>
                 </ul>
             </template>
