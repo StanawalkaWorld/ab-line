@@ -52,7 +52,7 @@
         opacity: 0;
     }
 
-    50% {
+    20% {
         transform: translateY(5vw);
         opacity: 0;
     }
@@ -67,17 +67,17 @@
 
 .fade-slide-from-top-delay {
     animation-name: fadeslidefromtop;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
 }
 .fade-slide-from-right-delay {
     animation-name: fadeslidefromright;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
 }
 .fade-slide-from-left-delay {
     animation-name: fadeslidefromleft;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
 }
 .fade-slide-from-bottom-delay {
     animation-name: fadeslidefrombottom;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
 }
