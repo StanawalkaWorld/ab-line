@@ -61,6 +61,7 @@ export default defineComponent({
                 <ul>
                     <li>
                         <span class="font-semibold">Pełna nazwa</span>: A&B Line
+                        Andrzej Barański
                     </li>
                     <li><span class="font-semibold">NIP</span>: 5811803184</li>
                     <li><span class="font-semibold">REGON</span>: 220330804</li>
