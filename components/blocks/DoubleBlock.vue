@@ -5,10 +5,18 @@ import { useIntersectionObserver } from "@/composables/intersection";
 export default defineComponent({
     name: "DoubleBlock",
 
-    setup() {
+    props: {
+        threshold: {
+            required: false,
+            type: Number,
+            default: 0.5,
+        },
+    },
+
+    setup(props) {
         const trigger = ref();
         const { isVisible } = useIntersectionObserver(trigger, {
-            threshold: 0.4,
+            threshold: props.threshold,
         });
 
         return {

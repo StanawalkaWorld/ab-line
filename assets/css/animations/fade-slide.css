@@ -47,37 +47,6 @@
     }
 }
 
-/* Drive in from left */
-@keyframes driveinfromleft {
-    0% {
-        transform: translateX(-10vw);
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-/* Drive in from right */
-@keyframes driveinfromright {
-    0% {
-        transform: translateX(10vw);
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
 /* Animation classes */
 
 .fade-slide-from-top-anim {
@@ -91,15 +60,4 @@
 }
 .fade-slide-from-bottom-anim {
     animation: fadeslidefrombottom 0.5s;
-}
-
-.drive-in-from-left {
-    animation-name: driveinfromleft;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.81, -0.04, 0.495, 0.975);
-}
-.drive-in-from-right {
-    animation-name: driveinfromright;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.81, -0.04, 0.495, 0.975);
 }

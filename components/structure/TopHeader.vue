@@ -17,11 +17,6 @@ export default defineComponent({
                 icon: "bi-house-fill",
             },
             {
-                name: "Wycena",
-                to: "/pricing",
-                icon: "bi-tag-fill",
-            },
-            {
                 name: "O nas",
                 to: "/about",
                 icon: "bi-person-fill",
@@ -36,7 +31,7 @@ export default defineComponent({
 </script>
 
 <template>
-    <header class="flex flex-col md:flex-row fade-slide-from-top-anim">
+    <header class="flex flex-col md:flex-row fade-slide-from-top-delay">
         <NuxtLink to="/" class="flex justify-center <md:mb-5">
             <div
                 class="bg-contain bg-center h-20 w-full md:w-20 bg-no-repeat"

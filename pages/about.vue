@@ -59,12 +59,23 @@ export default defineComponent({
 
 <template>
     <div class="container mx-auto">
-        <div class="mb-20 text-center">
+        <div class="text-center">
             <h1 class="text-6xl my-8">O nas</h1>
             <p class="px-6 text-lg">
                 Nasza firma zajmuje się prowadzeniem aut 13,6. Świadczymy usługi
                 w całej Europie ale najlepiej specjalizujemy się w Austrii.
             </p>
+        </div>
+        <div class="text-center my-20">
+            <h1 class="text-6xl my-8">Dane firmy</h1>
+            <ul>
+                <li>
+                    <span class="font-semibold">Pełna nazwa:</span> A&B Line
+                    Andrzej Barański
+                </li>
+                <li><span class="font-semibold">NIP:</span> 5811803184</li>
+                <li><span class="font-semibold">REGON:</span> 220330804</li>
+            </ul>
         </div>
         <div>
             <h1 class="text-6xl text-center my-8">Nasz zespół</h1>

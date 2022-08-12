@@ -12,12 +12,17 @@ export default defineComponent({
             type: Object,
             default: () => ({}),
         },
+        threshold: {
+            required: false,
+            type: Number,
+            default: 0.5,
+        },
     },
 
     setup(props) {
         const trigger = ref();
         const { isVisible } = useIntersectionObserver(trigger, {
-            threshold: 0.4,
+            threshold: props.threshold,
         });
 
         const defaultAnimations: AnimationSet = {
