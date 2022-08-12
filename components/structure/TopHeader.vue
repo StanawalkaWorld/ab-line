@@ -17,11 +17,6 @@ export default defineComponent({
                 icon: "bi-house-fill",
             },
             {
-                name: "Wycena",
-                to: "/pricing",
-                icon: "bi-tag-fill",
-            },
-            {
                 name: "O nas",
                 to: "/about",
                 icon: "bi-person-fill",
