@@ -3,6 +3,12 @@ import { defineComponent } from "vue";
 import IconList from "../UI/IconList.vue";
 import type { IconListItem } from "~/types/IconList";
 
+interface IconLink {
+    icon: string;
+    iconColor?: string;
+    href: string;
+}
+
 export default defineComponent({
     name: "TheFooter",
     components: { IconList },
@@ -20,8 +26,20 @@ export default defineComponent({
             },
         ];
 
+        const underLogoLinks: IconLink[] = [
+            {
+                icon: "bi-facebook",
+                href: "https://www.facebook.com",
+            },
+            {
+                icon: "bi-linkedin",
+                href: "https://www.linkedin.com/in/andrzej-baranski-235643183",
+            },
+        ];
+
         return {
             contactList,
+            underLogoLinks,
         };
     },
 });
@@ -29,13 +47,25 @@ export default defineComponent({
 
 <template>
     <footer class="bg-black text-white flex <lg:(flex-col items-center) p-10">
-        <div class="footer-block <lg:w-full">
+        <div class="footer-block <lg:w-full flex-col">
             <div
                 class="w-1/2 h-20 bg-contain bg-no-repeat bg-center"
                 :style="{
                     backgroundImage: `url('${require('@/assets/img/logo/short-new.webp')}')`,
                 }"
             ></div>
+            <div class="w-full flex children:block justify-evenly">
+                <a
+                    v-for="link in underLogoLinks"
+                    :key="link.href"
+                    :href="link.href"
+                    target="_blank"
+                    class="text-3xl"
+                    :style="{ color: link.iconColor }"
+                >
+                    <i class="bi" :class="link.icon"></i>
+                </a>
+            </div>
         </div>
         <div class="footer-block">
             <div class="p-5 <lg:text-center">
