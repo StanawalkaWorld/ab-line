@@ -75,9 +75,6 @@ export default defineComponent({
                         <NuxtLink to="/">Strona główna</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/pricing">Wycena</NuxtLink>
-                    </li>
-                    <li>
                         <NuxtLink to="/about">O nas</NuxtLink>
                     </li>
                 </ul>
