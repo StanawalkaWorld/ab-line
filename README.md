@@ -4,7 +4,7 @@ Firma A&B Line zajmuje się profesjonalnym prowadzeniem aut w Europie. To repozy
 
 ## Użyte technologie i biblioteki
 
-- [Nuxt.js 2](https://nuxtjs.org/)
-- [WindiCSS](https://windicss.org/)
-- [Bootstrap-icons](https://icons.getbootstrap.com/)
-- [flag-icons](https://flagicons.lipis.dev/)
+-   [Nuxt.js 2](https://nuxtjs.org/)
+-   [WindiCSS](https://windicss.org/)
+-   [Bootstrap-icons](https://icons.getbootstrap.com/)
+-   [flag-icons](https://flagicons.lipis.dev/)
