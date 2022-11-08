@@ -38,6 +38,7 @@ export default defineComponent({
                 :style="{
                     backgroundImage: `url('${require('@/assets/img/logo/full-new.webp')}')`,
                 }"
+                aria-role="link"
                 aria-label="Logo strony, prowadzący do strony głównej"
             ></div>
         </NuxtLink>

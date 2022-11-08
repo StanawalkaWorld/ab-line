@@ -5,8 +5,8 @@ import type { IconListItem } from "~/types/IconList";
 
 interface IconLink {
     icon: string;
-    iconColor?: string;
     href: string;
+    arialabel: string;
 }
 
 export default defineComponent({
@@ -30,10 +30,12 @@ export default defineComponent({
             {
                 icon: "bi-facebook",
                 href: "https://www.facebook.com",
+                arialabel: "Link do naszej strony na facebooku",
             },
             {
                 icon: "bi-linkedin",
                 href: "https://www.linkedin.com/in/andrzej-baranski-235643183",
+                arialabel: "Link do strony LinkedIn właściciela firmy.",
             },
         ];
 
@@ -54,7 +56,7 @@ export default defineComponent({
                     backgroundImage: `url('${require('@/assets/img/logo/short-new.webp')}')`,
                 }"
             ></div>
-            <div class="w-full flex children:block justify-evenly">
+            <div class="w-1/2 mt-5 flex children:block justify-around">
                 <a
                     v-for="link in underLogoLinks"
                     :key="link.href"
@@ -62,8 +64,9 @@ export default defineComponent({
                     target="_blank"
                     class="text-3xl"
                     :style="{ color: link.iconColor }"
+                    :aria-label="link.arialabel"
                 >
-                    <i class="bi" :class="link.icon"></i>
+                    <i class="bi" :class="link.icon" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
