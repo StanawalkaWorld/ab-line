@@ -1,5 +1,5 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+import Logo from "~/assets/img/logo/full-new.webp";
 
 interface Navlink {
     name: string;
@@ -7,27 +7,18 @@ interface Navlink {
     icon?: string;
 }
 
-export default defineComponent({
-    name: "TopHeader",
-    setup() {
-        const navlinks: Navlink[] = [
-            {
-                name: "Strona główna",
-                to: "/",
-                icon: "bi-house-fill",
-            },
-            {
-                name: "O nas",
-                to: "/about",
-                icon: "bi-person-fill",
-            },
-        ];
-
-        return {
-            navlinks,
-        };
+const navlinks: Navlink[] = [
+    {
+        name: "Strona główna",
+        to: "/",
+        icon: "bi-house-fill",
     },
-});
+    {
+        name: "O nas",
+        to: "/about",
+        icon: "bi-person-fill",
+    },
+];
 </script>
 
 <template>
@@ -36,7 +27,7 @@ export default defineComponent({
             <div
                 class="bg-contain bg-center h-20 w-full md:w-20 bg-no-repeat"
                 :style="{
-                    backgroundImage: `url('${require('@/assets/img/logo/full-new.webp')}')`,
+                    backgroundImage: `url('${Logo}')`,
                 }"
                 aria-label="Logo strony, prowadzący do strony głównej"
             ></div>
