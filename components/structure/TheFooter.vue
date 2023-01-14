@@ -1,7 +1,7 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import IconList from "../UI/IconList.vue";
 import type { IconListItem } from "~/types/IconList";
+import Logo from "~/assets/img/logo/short-new.webp";
 
 interface IconLink {
     icon: string;
@@ -9,40 +9,29 @@ interface IconLink {
     href: string;
 }
 
-export default defineComponent({
-    name: "TheFooter",
-    components: { IconList },
-    setup() {
-        const contactList: IconListItem[] = [
-            {
-                name: "abline.office@gmail.com",
-                icon: "bi-envelope-fill",
-                link: "mailto:abline.office@gmail.com",
-            },
-            {
-                name: "+48 883 766 963",
-                icon: "bi-telephone-fill",
-                link: "tel:+48883766963",
-            },
-        ];
-
-        const underLogoLinks: IconLink[] = [
-            {
-                icon: "bi-facebook",
-                href: "https://www.facebook.com",
-            },
-            {
-                icon: "bi-linkedin",
-                href: "https://www.linkedin.com/in/andrzej-baranski-235643183",
-            },
-        ];
-
-        return {
-            contactList,
-            underLogoLinks,
-        };
+const contactList: IconListItem[] = [
+    {
+        name: "abline.office@gmail.com",
+        icon: "bi-envelope-fill",
+        link: "mailto:abline.office@gmail.com",
     },
-});
+    {
+        name: "+48 883 766 963",
+        icon: "bi-telephone-fill",
+        link: "tel:+48883766963",
+    },
+];
+
+const underLogoLinks: IconLink[] = [
+    {
+        icon: "bi-facebook",
+        href: "https://www.facebook.com",
+    },
+    {
+        icon: "bi-linkedin",
+        href: "https://www.linkedin.com/in/andrzej-baranski-235643183",
+    },
+];
 </script>
 
 <template>
@@ -51,7 +40,7 @@ export default defineComponent({
             <div
                 class="w-1/2 h-20 bg-contain bg-no-repeat bg-center"
                 :style="{
-                    backgroundImage: `url('${require('@/assets/img/logo/short-new.webp')}')`,
+                    backgroundImage: `url('${Logo}')`,
                 }"
             ></div>
             <div class="w-full flex children:block justify-evenly">
