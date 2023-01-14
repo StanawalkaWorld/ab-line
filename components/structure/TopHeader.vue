@@ -47,7 +47,7 @@ const navlinks: Navlink[] = [
 </template>
 
 <style scoped>
-nav .nuxt-link-exact-active {
+nav .router-link-exact-active {
     @apply font-semibold bg-dominant-800 text-primary-50 rounded-md border-2 border-dominant-500;
 }
 </style>

@@ -105,7 +105,7 @@ const underLogoLinks: IconLink[] = [
     @apply text-xl text-center font-semibold mb-2;
 }
 
-.nuxt-link-exact-active {
+.router-link-exact-active {
     @apply text-rose-500 font-bold;
 }
 </style>
