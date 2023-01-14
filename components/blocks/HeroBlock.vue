@@ -1,61 +1,50 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import UButton from "../UI/UButton.vue";
 import IconList from "../UI/IconList.vue";
+import Trucking from "~/assets/img/pexels-mike-b-trucking-lowres.webp";
 import type { IconListItem } from "~/types/IconList";
 
-export default defineComponent({
-    name: "HeroBlock",
-    components: { UButton, IconList },
-
-    setup() {
-        const andrzejList: IconListItem[] = [
-            {
-                name: "Andrzej Barański",
-                icon: "bi-person",
-                classes: "font-semibold",
-            },
-            {
-                name: "abline.office@gmail.com",
-                icon: "bi-envelope",
-                link: "mailto:abline.office@gmail.com",
-            },
-            {
-                name: "+48 883 766 963",
-                icon: "bi-telephone",
-                link: "tel:+48883766963",
-            },
-        ];
-        const bartekList: IconListItem[] = [
-            {
-                name: "Bartek Mroczkowski",
-                icon: "bi-person",
-                classes: "font-semibold",
-            },
-            {
-                name: "bm.abline@gmail.com",
-                icon: "bi-envelope",
-                link: "mailto:bm.abline@gmail.com",
-            },
-            {
-                name: "+48 517 615 625",
-                icon: "bi-telephone",
-                link: "tel:+48517615625",
-            },
-        ];
-        return {
-            andrzejList,
-            bartekList,
-        };
+const andrzejList: IconListItem[] = [
+    {
+        name: "Andrzej Barański",
+        icon: "bi-person",
+        classes: "font-semibold",
     },
-});
+    {
+        name: "abline.office@gmail.com",
+        icon: "bi-envelope",
+        link: "mailto:abline.office@gmail.com",
+    },
+    {
+        name: "+48 883 766 963",
+        icon: "bi-telephone",
+        link: "tel:+48883766963",
+    },
+];
+const bartekList: IconListItem[] = [
+    {
+        name: "Bartek Mroczkowski",
+        icon: "bi-person",
+        classes: "font-semibold",
+    },
+    {
+        name: "bm.abline@gmail.com",
+        icon: "bi-envelope",
+        link: "mailto:bm.abline@gmail.com",
+    },
+    {
+        name: "+48 517 615 625",
+        icon: "bi-telephone",
+        link: "tel:+48517615625",
+    },
+];
 </script>
 
 <template>
     <section
         class="py-6 px-2 min-h-96 bgimage md:bg-fixed bg-blend-multiply bg-true-gray-500 flex"
         :style="{
-            backgroundImage: `url('${require('@/assets/img/pexels-mike-b-trucking-lowres.webp')}')`,
+            backgroundImage: `url('${Trucking}')`,
         }"
     >
         <!-- ⬆ Main section tag with a dimmed image -->
