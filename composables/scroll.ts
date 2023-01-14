@@ -1,4 +1,3 @@
-import { unref } from "vue";
 import { MaybeRef, monadRun } from "~/types/monad";
 
 export const useSmoothScroll = () => {
