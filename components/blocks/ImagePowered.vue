@@ -1,19 +1,8 @@
-<script>
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import GradientText from "../UI/GradientText.vue";
 import DoubleBlock from "./DoubleBlock.vue";
 
-export default defineComponent({
-    name: "ImagePowered",
-    components: { DoubleBlock, GradientText },
-    props: {
-        imgSrc: {
-            type: String,
-            default: "",
-            required: false,
-        },
-    },
-});
+const props = withDefaults(defineProps<{ imgSrc?: string }>(), { imgSrc: "" });
 </script>
 
 <template>
