@@ -1,4 +1,6 @@
-export default {
+import { defineNuxtConfig } from "nuxt/config";
+
+export default defineNuxtConfig({
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         title: "A&B Line Andrzej Barański",
@@ -30,25 +32,11 @@ export default {
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: ["~/assets/main.css"],
 
-    // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ["@/plugins/bs-icons.js", "@/plugins/flag-icons.js"],
-
-    // Auto import components: https://go.nuxtjs.dev/config-components
-    components: true,
-
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: [
+    modules: [
         // https://go.nuxtjs.dev/typescript
-        "@nuxt/typescript-build",
         "nuxt-windicss",
-        "@nuxtjs/composition-api/module",
     ],
 
-    // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
-
-    // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
-
     target: "static",
-};
+});
