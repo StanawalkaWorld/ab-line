@@ -1,47 +1,36 @@
-<script lang="ts">
-import { defineComponent, ref } from "vue";
+<script setup lang="ts">
 import { useIntersectionObserver } from "@/composables/intersection";
-import { AnimationSet } from "~/types/AnimaitonSet";
 
-export default defineComponent({
-    name: "TripleBlock",
+interface AnimationSetProps {
+    header?: string;
+    left?: string;
+    middle?: string;
+    right?: string;
+}
 
-    props: {
-        animations: {
-            required: false,
-            type: Object,
-            default: () => ({}),
-        },
-        threshold: {
-            required: false,
-            type: Number,
-            default: 0.5,
-        },
-    },
+const props = withDefaults(
+    defineProps<{ threshold?: number; animations?: AnimationSetProps }>(),
+    { threshold: 0.5, animations: () => ({}) }
+);
 
-    setup(props) {
-        const trigger = ref();
-        const { isVisible } = useIntersectionObserver(trigger, {
-            threshold: props.threshold,
-        });
-
-        const defaultAnimations: AnimationSet = {
-            header: "fade-slide-from-bottom-anim",
-            left: "fade-slide-from-left-anim",
-            middle: "fade-slide-from-bottom-anim",
-            right: "fade-slide-from-right-anim",
-        };
-
-        return {
-            isVisible,
-            trigger,
-            intersectionAnimations: {
-                ...defaultAnimations,
-                ...props.animations,
-            },
-        };
-    },
+const trigger = ref();
+const { isVisible } = useIntersectionObserver(trigger, {
+    threshold: props.threshold,
 });
+
+const defaultAnimations = {
+    header: "fade-slide-from-bottom-anim",
+    left: "fade-slide-from-left-anim",
+    middle: "fade-slide-from-bottom-anim",
+    right: "fade-slide-from-right-anim",
+};
+
+const intersectionAnimations = {
+    header: props.animations.header ?? defaultAnimations.header,
+    left: props.animations.left ?? defaultAnimations.left,
+    middle: props.animations.middle ?? defaultAnimations.middle,
+    right: props.animations.right ?? defaultAnimations.right,
+};
 </script>
 
 <template>
