@@ -36,7 +36,7 @@ const offer: string[] = [
                 icon="bi-arrow-down"
                 class="text-primary-200 mx-auto font-semibold"
                 @click="toFirstBlock"
-                >Zobacz naszą ofertę</UButton
+                >Sprawdź, co oferujemy</UButton
             >
         </div>
         <!-- First Content block -->
