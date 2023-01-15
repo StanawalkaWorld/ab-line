@@ -43,7 +43,7 @@ const underLogoLinks: IconLink[] = [
                     backgroundImage: `url('${Logo}')`,
                 }"
             ></div>
-            <div class="w-full flex children:block justify-evenly">
+            <div class="w-1/2 mt-5 flex children:block justify-around">
                 <a
                     v-for="link in underLogoLinks"
                     :key="link.href"
