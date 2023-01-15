@@ -31,7 +31,6 @@ const navlinks: Navlink[] = [
                 }"
                 aria-role="link"
                 aria-label="Logo strony, prowadzący do strony głównej"
-                aria-role="link"
             ></div>
         </NuxtLink>
         <nav class="flex flex-col md:flex-row items-center ml-10 children:mr-6">
