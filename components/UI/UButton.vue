@@ -1,17 +1,9 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+const props = withDefaults(defineProps<{ icon?: string }>(), { icon: "" });
 
-export default defineComponent({
-    name: "UButton",
-    props: {
-        icon: {
-            required: false,
-            type: String,
-            default: "",
-        },
-    },
-    emits: ["click"],
-});
+const emits = defineEmits<{
+    (e: "click"): void;
+}>();
 </script>
 
 <template>

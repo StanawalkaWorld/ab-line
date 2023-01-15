@@ -1,50 +1,39 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import IconList from "../UI/IconList.vue";
 import type { IconListItem } from "~/types/IconList";
+import Logo from "~/assets/img/logo/short-new.webp";
 
 interface IconLink {
     icon: string;
     href: string;
-    arialabel: string;
+    ariaLabel: string;
 }
 
-export default defineComponent({
-    name: "TheFooter",
-    components: { IconList },
-    setup() {
-        const contactList: IconListItem[] = [
-            {
-                name: "abline.office@gmail.com",
-                icon: "bi-envelope-fill",
-                link: "mailto:abline.office@gmail.com",
-            },
-            {
-                name: "+48 883 766 963",
-                icon: "bi-telephone-fill",
-                link: "tel:+48883766963",
-            },
-        ];
-
-        const underLogoLinks: IconLink[] = [
-            {
-                icon: "bi-facebook",
-                href: "https://www.facebook.com",
-                arialabel: "Link do naszej strony na facebooku",
-            },
-            {
-                icon: "bi-linkedin",
-                href: "https://www.linkedin.com/in/andrzej-baranski-235643183",
-                arialabel: "Link do strony LinkedIn właściciela firmy.",
-            },
-        ];
-
-        return {
-            contactList,
-            underLogoLinks,
-        };
+const contactList: IconListItem[] = [
+    {
+        name: "abline.office@gmail.com",
+        icon: "bi-envelope-fill",
+        link: "mailto:abline.office@gmail.com",
     },
-});
+    {
+        name: "+48 883 766 963",
+        icon: "bi-telephone-fill",
+        link: "tel:+48883766963",
+    },
+];
+
+const underLogoLinks: IconLink[] = [
+    {
+        icon: "bi-facebook",
+        href: "https://www.facebook.com",
+        ariaLabel: "Link do naszej strony na facebooku.",
+    },
+    {
+        icon: "bi-linkedin",
+        href: "https://www.linkedin.com/in/andrzej-baranski-235643183",
+        ariaLabel: "Link do strony LinkedIn właściciela firmy.",
+    },
+];
 </script>
 
 <template>
@@ -53,7 +42,7 @@ export default defineComponent({
             <div
                 class="w-1/2 h-20 bg-contain bg-no-repeat bg-center"
                 :style="{
-                    backgroundImage: `url('${require('@/assets/img/logo/short-new.webp')}')`,
+                    backgroundImage: `url('${Logo}')`,
                 }"
             ></div>
             <div class="w-1/2 mt-5 flex children:block justify-around">
@@ -63,8 +52,7 @@ export default defineComponent({
                     :href="link.href"
                     target="_blank"
                     class="text-3xl"
-                    :style="{ color: link.iconColor }"
-                    :aria-label="link.arialabel"
+                    :aria-label="link.ariaLabel"
                 >
                     <i class="bi" :class="link.icon" aria-hidden="true"></i>
                 </a>
@@ -119,7 +107,7 @@ export default defineComponent({
     @apply text-xl text-center font-semibold mb-2;
 }
 
-.nuxt-link-exact-active {
+.router-link-exact-active {
     @apply text-rose-500 font-bold;
 }
 </style>

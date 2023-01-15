@@ -1,33 +1,15 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import type { IconListItem } from "~/types/IconList";
 
-export default defineComponent({
-    name: "IconList",
-    props: {
-        items: {
-            required: true,
-            type: Array,
-        },
-        iconClasses: {
-            required: false,
-            type: String,
-            default: "",
-        },
-    },
-    setup(props) {
-        const listitems: IconListItem[] = props.items as IconListItem[];
-
-        return {
-            listitems,
-        };
-    },
-});
+const props = withDefaults(
+    defineProps<{ items: IconListItem[]; iconClasses?: string }>(),
+    { iconClasses: "" }
+);
 </script>
 
 <template>
     <ul>
-        <li v-for="item in listitems" :key="item.name" class="my-1">
+        <li v-for="item in items" :key="item.name" class="my-1">
             <i class="bi mr-2" :class="[item.icon, iconClasses]"></i>
             <a
                 v-if="item.link"

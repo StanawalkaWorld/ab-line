@@ -1,28 +1,13 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import TheFooter from "~/components/structure/TheFooter.vue";
 import TopHeader from "~/components/structure/TopHeader.vue";
-import "@/assets/main.css";
-import { useSmoothScroll } from "~/composables/scroll";
+import "~/assets/main.css";
 
-export default defineComponent({
-    name: "default-layout",
-    components: {
-        TopHeader,
-        TheFooter,
-    },
-    setup() {
-        const { scrollTo } = useSmoothScroll();
+const { scrollTo } = useSmoothScroll();
 
-        function toTop() {
-            scrollTo("#very-top");
-        }
-
-        return {
-            toTop,
-        };
-    },
-});
+function toTop() {
+    scrollTo("#very-top");
+}
 </script>
 
 <template>
@@ -34,7 +19,7 @@ export default defineComponent({
             <TopHeader />
         </div>
         <main class="min-h-screen mb-5">
-            <Nuxt />
+            <slot />
         </main>
         <TheFooter />
         <button

@@ -1,19 +1,8 @@
-<script>
-import { useRoute } from "@nuxtjs/composition-api";
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import UButton from "~/components/UI/UButton.vue";
 
-export default defineComponent({
-    name: "ErrorPage",
-    props: ["error"],
-    setup() {
-        const route = useRoute();
-        return {
-            route,
-        };
-    },
-    components: { UButton },
-});
+const route = useRoute();
+const error: any = useError();
 </script>
 
 <template>

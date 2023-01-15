@@ -1,4 +1,3 @@
-import { ref, unref, onMounted } from "@nuxtjs/composition-api";
 import { MaybeRef } from "~/types/monad";
 
 export const useIntersectionObserver = (

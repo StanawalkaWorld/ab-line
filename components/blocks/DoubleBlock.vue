@@ -1,29 +1,13 @@
-<script lang="ts">
-import { defineComponent, ref } from "vue";
+<script setup lang="ts">
 import { useIntersectionObserver } from "@/composables/intersection";
 
-export default defineComponent({
-    name: "DoubleBlock",
+const props = withDefaults(defineProps<{ threshold?: number }>(), {
+    threshold: 0.5,
+});
 
-    props: {
-        threshold: {
-            required: false,
-            type: Number,
-            default: 0.5,
-        },
-    },
-
-    setup(props) {
-        const trigger = ref();
-        const { isVisible } = useIntersectionObserver(trigger, {
-            threshold: props.threshold,
-        });
-
-        return {
-            isVisible,
-            trigger,
-        };
-    },
+const trigger = ref();
+const { isVisible } = useIntersectionObserver(trigger, {
+    threshold: props.threshold,
 });
 </script>
 

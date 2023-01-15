@@ -1,18 +1,15 @@
-<script>
-import { defineComponent } from "vue";
+<script setup lang="ts">
+import { IconListItem } from "~~/types/IconList";
 import IconList from "./IconList.vue";
 
-export default defineComponent({
-    name: "ContactCard",
-    components: { IconList },
-    props: {
-        contactInfo: {
-            required: true,
-            type: Object,
-        },
-    },
-    setup() {},
-});
+const props = defineProps<{
+    contactInfo: {
+        profilePicture: string;
+        name: string;
+        title: string;
+        contactInfo: IconListItem[];
+    };
+}>();
 </script>
 
 <template>

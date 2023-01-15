@@ -1,39 +1,29 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import { useSmoothScroll } from "@/composables/scroll";
+<script setup lang="ts">
 import HeroBlock from "~/components/blocks/HeroBlock.vue";
 import TripleBlock from "../components/blocks/TripleBlock.vue";
 import UButton from "~/components/UI/UButton.vue";
 import ImagePowered from "../components/blocks/ImagePowered.vue";
 import GradientText from "~/components/UI/GradientText.vue";
+import ciezarowka from "~/assets/img/ciezarowka-wycieta.webp";
+import trucks from "~/assets/img/pexels-marcin-jozwiak-trucks-lowres.webp";
 
-export default defineComponent({
-    setup() {
-        const { scrollTo } = useSmoothScroll();
+const { scrollTo } = useSmoothScroll();
 
-        const toFirstBlock = () => {
-            scrollTo("#first-block");
-        };
-
-        const offer: string[] = [
-            "Pewność dostarczenia ładunku do celu.",
-
-            "Bezproblemową obsługę doładunków.",
-
-            "Atrakcyjną cenę.",
-        ];
-
-        return {
-            toFirstBlock,
-            offer,
-            ciezarowka: require("@/assets/img/ciezarowka-wycieta.webp"),
-        };
-    },
-    components: { HeroBlock, TripleBlock, UButton, ImagePowered, GradientText },
-    head: {
-        title: "Strona główna - A&B Line",
-    },
+useHead({
+    title: "Strona główna - A&B Line",
 });
+
+const toFirstBlock = () => {
+    scrollTo("#first-block");
+};
+
+const offer: string[] = [
+    "Pewność dostarczenia ładunku do celu.",
+
+    "Bezproblemową obsługę doładunków.",
+
+    "Atrakcyjną cenę.",
+];
 </script>
 
 <template>
@@ -100,12 +90,7 @@ export default defineComponent({
                 </div>
             </template>
         </TripleBlock>
-        <ImagePowered
-            :img-src="
-                require('@/assets/img/pexels-marcin-jozwiak-trucks-lowres.webp')
-            "
-            class="my-20"
-        >
+        <ImagePowered :img-src="trucks" class="my-20">
             <template #header>
                 Jeżeli wybierzesz naszą firmę, zapewnimy Tobie:
             </template>
@@ -113,7 +98,7 @@ export default defineComponent({
                 <ul>
                     <li v-for="item in offer" :key="item" class="mb-3">
                         <span
-                            class="bi bi-caret-right-fill text-primary-300"
+                            class="bi bi-caret-right-fill text-primary-300 mr-2"
                         ></span>
                         <span>{{ item }}</span>
                     </li>
