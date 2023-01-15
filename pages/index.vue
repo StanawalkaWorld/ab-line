@@ -98,7 +98,7 @@ const offer: string[] = [
                 <ul>
                     <li v-for="item in offer" :key="item" class="mb-3">
                         <span
-                            class="bi bi-caret-right-fill text-primary-300"
+                            class="bi bi-caret-right-fill text-primary-300 mr-2"
                         ></span>
                         <span>{{ item }}</span>
                     </li>
