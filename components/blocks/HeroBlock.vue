@@ -68,7 +68,7 @@ const bartekList: IconListItem[] = [
                             class="fi fi-pl rounded-md text-3xl lg:text-5xl"
                         ></span>
                         <span
-                            class="fi fi-eu rounded-md text-3xl lg:text-5xl"
+                            class="fi fi-eu rounded-md text-3xl lg:text-5xl ml-4"
                         ></span
                     ></nobr>
                 </h1>
