@@ -5,8 +5,8 @@ import Logo from "~/assets/img/logo/short-new.webp";
 
 interface IconLink {
     icon: string;
-    iconColor?: string;
     href: string;
+    ariaLabel: string;
 }
 
 const contactList: IconListItem[] = [
@@ -26,10 +26,12 @@ const underLogoLinks: IconLink[] = [
     {
         icon: "bi-facebook",
         href: "https://www.facebook.com",
+        ariaLabel: "Link do naszej strony na facebooku.",
     },
     {
         icon: "bi-linkedin",
         href: "https://www.linkedin.com/in/andrzej-baranski-235643183",
+        ariaLabel: "Link do strony LinkedIn właściciela firmy.",
     },
 ];
 </script>
@@ -50,9 +52,9 @@ const underLogoLinks: IconLink[] = [
                     :href="link.href"
                     target="_blank"
                     class="text-3xl"
-                    :style="{ color: link.iconColor }"
+                    :aria-label="link.ariaLabel"
                 >
-                    <i class="bi" :class="link.icon"></i>
+                    <i class="bi" :class="link.icon" aria-hidden="true"></i>
                 </a>
             </div>
         </div>

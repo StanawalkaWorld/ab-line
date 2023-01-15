@@ -25,8 +25,9 @@ function toTop() {
         <button
             class="text-3xl md:text-4xl fixed right-4 md:right-8 bottom-16 md:bottom-8 transition-all ease-linear bg-primary-600 hover:bg-primary-400 rounded-full w-12 h-12 md:(w-14 h-14)"
             @click="toTop"
+            aria-label="Wróć na samą górę strony."
         >
-            <i class="bi bi-arrow-up"></i>
+            <i class="bi bi-arrow-up" aria-hidden="true"></i>
         </button>
     </div>
 </template>
