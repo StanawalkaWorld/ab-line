@@ -29,6 +29,7 @@ const navlinks: Navlink[] = [
                 :style="{
                     backgroundImage: `url('${Logo}')`,
                 }"
+                aria-role="link"
                 aria-label="Logo strony, prowadzący do strony głównej"
                 aria-role="link"
             ></div>
