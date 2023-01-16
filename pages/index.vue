@@ -6,6 +6,7 @@ import ImagePowered from "../components/blocks/ImagePowered.vue";
 import GradientText from "~/components/UI/GradientText.vue";
 import ciezarowka from "~/assets/img/ciezarowka-wycieta.webp";
 import trucks from "~/assets/img/pexels-marcin-jozwiak-trucks-lowres.webp";
+import gory from "~/assets/img/pexels-photoscom-lowres.webp";
 
 const { scrollTo } = useSmoothScroll();
 
@@ -72,10 +73,8 @@ const offer: string[] = [
                 class="text-lg xl:text-xl <xl:p-10 font-roboto font-light flag-round"
             >
                 <!-- Main text -->
-                <p class="mb-5">
-                    Oferujemy profesjonalne prowadzenie aut 13,6. Specjalizujemy
-                    się w <span class="fi fi-at"></span> Austrii, ale nasze
-                    usługi obejmują całą <span class="fi fi-eu"></span> Europę.
+                <p class="mb-5 text-center">
+                    Oferujemy profesjonalne prowadzenie aut 13,6.
                 </p>
             </div>
 
@@ -103,6 +102,17 @@ const offer: string[] = [
                         <span>{{ item }}</span>
                     </li>
                 </ul>
+            </template>
+        </ImagePowered>
+        <ImagePowered
+            :img-src="gory"
+            class="my-40 flex-row-reverse flag-round text-center"
+        >
+            <template #header> Nie boimy się wyzwań </template>
+            <template #content>
+                Specjalizujemy się nie tylko w
+                <span class="fi fi-pl"></span> Polsce, ale również w całej
+                <span class="fi fi-eu"></span> Europie.
             </template>
         </ImagePowered>
     </div>

@@ -38,7 +38,7 @@ const contacts: ContactCardInfo[] = [
             <h1 class="text-6xl my-8">O nas</h1>
             <p class="px-6 text-lg">
                 Nasza firma zajmuje się prowadzeniem aut 13,6. Świadczymy usługi
-                w całej Europie ale najlepiej specjalizujemy się w Austrii.
+                w Polsce i całej Europie.
             </p>
         </div>
         <div class="text-center my-20">
