@@ -21,23 +21,6 @@ const andrzejList: IconListItem[] = [
         link: "tel:+48883766963",
     },
 ];
-const bartekList: IconListItem[] = [
-    {
-        name: "Bartek Mroczkowski",
-        icon: "bi-person",
-        classes: "font-semibold",
-    },
-    {
-        name: "bm.abline@gmail.com",
-        icon: "bi-envelope",
-        link: "mailto:bm.abline@gmail.com",
-    },
-    {
-        name: "+48 517 615 625",
-        icon: "bi-telephone",
-        link: "tel:+48517615625",
-    },
-];
 </script>
 
 <template>
@@ -56,7 +39,7 @@ const bartekList: IconListItem[] = [
             <!-- Half-width container for a header and motivational paragraph -->
             <div
                 ref="leftBlock"
-                class="sm:w-1/2 <lg:(text-center mb-6) fade-slide-from-left-delay"
+                class="lg:w-1/2 <lg:(text-center mb-6) fade-slide-from-left-delay"
             >
                 <h1
                     class="text-4xl lg:text-6xl font-semibold mb-8 text-true-gray-200"
@@ -86,7 +69,7 @@ const bartekList: IconListItem[] = [
             </div>
             <!-- Half-width block for contact information -->
             <div
-                class="sm:w-1/2 flex justify-center items-center <lg:text-center fade-slide-from-right-delay"
+                class="lg:w-1/2 flex justify-center items-center <lg:text-center fade-slide-from-right-delay"
             >
                 <!-- Resizable block div, that packs all text -->
                 <div class="min-w-1/2 sm:bg-primary-900 px-6 py-10 rounded-lg">
