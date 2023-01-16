@@ -59,13 +59,13 @@ const andrzejList: IconListItem[] = [
                     Zapewniamy pewną dostawę towaru z punktu A do punktu B.
                 </p>
                 <!-- Button link into pricing page -->
-                <NuxtLink to="/pricing">
+                <!-- <NuxtLink to="/pricing">
                     <UButton
                         class="mt-10 border-2 border-primary-200 text-primary-200 font-semibold"
                         icon="bi-tag"
                         >Zobacz wycenę</UButton
                     >
-                </NuxtLink>
+                </NuxtLink> -->
             </div>
             <!-- Half-width block for contact information -->
             <div
