@@ -96,10 +96,6 @@ const bartekList: IconListItem[] = [
                         class="divide-primary-50 text-lg <xl:divide-y-2 xl:(flex divide-x-2)"
                     >
                         <IconList :items="andrzejList" />
-                        <IconList
-                            class="<xl:(mt-5 pt-5) xl:(ml-5 pl-5)"
-                            :items="bartekList"
-                        />
                     </address>
                 </div>
             </div>

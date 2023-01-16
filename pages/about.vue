@@ -29,22 +29,6 @@ const contacts: ContactCardInfo[] = [
             },
         ],
     },
-    {
-        name: "Bartek Mroczkowski",
-        profilePicture: "https://picsum.photos/300/300.webp?random=2",
-        contactInfo: [
-            {
-                name: "bm.abline@gmail.com",
-                icon: "bi-envelope",
-                link: "mailto:bm.abline@gmail.com",
-            },
-            {
-                name: "+48 517 615 625",
-                icon: "bi-telephone",
-                link: "tel:+48517615625",
-            },
-        ],
-    },
 ];
 </script>
 
