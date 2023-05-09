@@ -29,22 +29,6 @@ const contacts: ContactCardInfo[] = [
             },
         ],
     },
-    {
-        name: "Bartek Mroczkowski",
-        profilePicture: "https://picsum.photos/300/300.webp?random=2",
-        contactInfo: [
-            {
-                name: "bm.abline@gmail.com",
-                icon: "bi-envelope",
-                link: "mailto:bm.abline@gmail.com",
-            },
-            {
-                name: "+48 517 615 625",
-                icon: "bi-telephone",
-                link: "tel:+48517615625",
-            },
-        ],
-    },
 ];
 </script>
 
@@ -54,7 +38,7 @@ const contacts: ContactCardInfo[] = [
             <h1 class="text-6xl my-8">O nas</h1>
             <p class="px-6 text-lg">
                 Nasza firma zajmuje się prowadzeniem aut 13,6. Świadczymy usługi
-                w całej Europie ale najlepiej specjalizujemy się w Austrii.
+                w Polsce i całej Europie.
             </p>
         </div>
         <div class="text-center my-20">

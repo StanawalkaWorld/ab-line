@@ -12,7 +12,6 @@
         "bootstrap-icons": "^1.9.1"
     },
     "devDependencies": {
-        "flag-icons": "^6.6.4",
         "nuxt": "3.0.0",
         "nuxt-windicss": "^2.6.0"
     }
