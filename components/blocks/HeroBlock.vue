@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import UButton from "../UI/UButton.vue";
 import IconList from "../UI/IconList.vue";
 import Trucking from "~/assets/img/pexels-mike-b-trucking-lowres.webp";
 import type { IconListItem } from "~/types/IconList";
